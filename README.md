@@ -1,6 +1,7 @@
 <h2>Description</h2>
 
-It's my portfolio.
+It's the repo of my portfolio. You can check it <a href="www.kevinahloye.com"> here </a>
+
 I made it by my own.
 
 You can see & check all my code that I used for the development of my portfolio.
