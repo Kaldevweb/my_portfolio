@@ -1,0 +1,19 @@
+[10-May-2016 13:42:15 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 43
+[10-May-2016 13:42:56 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 23
+[10-May-2016 13:43:10 America/Montreal] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 15
+[10-May-2016 13:43:24 America/Montreal] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 15
+[10-May-2016 13:43:27 America/Montreal] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 15
+[10-May-2016 13:43:29 America/Montreal] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 15
+[10-May-2016 13:43:30 America/Montreal] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 15
+[10-May-2016 13:44:01 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 22
+[10-May-2016 13:46:01 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 44
+[10-May-2016 13:47:55 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 44
+[10-May-2016 13:49:32 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 44
+[10-May-2016 13:49:56 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 44
+[10-May-2016 13:50:47 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 44
+[10-May-2016 13:50:54 America/Montreal] PHP Fatal error:  Call to a member function fetch_array() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 44
+[10-May-2016 13:56:18 America/Montreal] PHP Parse error:  syntax error, unexpected ')' in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 43
+[10-May-2016 14:18:01 America/Montreal] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 23
+[10-May-2016 14:18:05 America/Montreal] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 23
+[10-May-2016 14:18:12 America/Montreal] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/index.php on line 23
+[13-May-2016 13:13:33 America/Montreal] PHP Parse error:  syntax error, unexpected '>' in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/head.php on line 231

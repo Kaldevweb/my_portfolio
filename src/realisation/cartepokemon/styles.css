@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+/*====================================================================================================================RESET=====================================================================================================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+/*Hide 000webhost*/
+a[title~=hosting] {
+    display: none !important;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.nofloat {
+	clear: both;
+}
+
+/*==============================================================================================================================================================================================================================================
+*/
+
+/*GENERAUX*/
+body {
+	background-color: #395ea9;
+	font-size:100%;
+}
+
+/*ADMIN*/
+div#onglet_admin {
+	width: 24%;
+	height: 300px;
+	background: rgba(255, 203, 5, 0.6);
+	position: absolute;
+	top: -260px;/*-200px*/
+	z-index: 3;
+}
+div#onglet_admin h2 {
+	color: #395ea9;
+	font-weight: bold;
+}
+.downarrow:before  {
+	position: absolute;
+	bottom: 4px;
+	left: 50%;
+	content: "\2193";
+	font-size: 200%;
+	text-decoration: none;
+}
+#form_admin {
+	width: 50%;
+	margin: 23px auto;
+	padding: 30px 0px;
+	background-color: white;
+	border-radius: 20px;
+}
+#form_admin input {
+	display: block;
+	width: 80%;
+	margin: 0px auto 15px;
+}
+#form_admin h2 {
+	margin-bottom: 5px;
+	text-align: center;
+}
+#form_admin p {
+	padding: 0px;
+}
+input#valid_admin {
+	display: block;
+	width: 40%;
+	margin: 0px auto;
+	padding: 5px;
+}
+
+
+/*MAIN*/
+#main {
+	width: 960px;
+	margin: 0px auto;
+	background-color: #fff;
+}
+
+/*HEADER*/
+header img {
+	display: block;
+	width: 70%;
+	height: 100%;
+	margin: 0px auto;
+}
+
+/*CONTAINER*/
+#container h1, #container2 h1, h1 {
+	margin: 25px 0px 25px 0px;
+	padding: 10px 0px;
+	font-size: 200%;
+	color: #fff;
+	background-color: #ffcb05;
+	text-align: center;
+	text-shadow: 2px 2px 0.5px #000000;
+	-moz-text-shadow: 2px 2px 0.5px #000000;
+}
+
+#container {
+	width: 100%;
+}
+
+#choix_pokemon {
+	width: 73.95833333%; /*710/960*/
+	margin: 0px auto;
+	padding-left: 20px;
+}
+#choix_pokemon #pokemon {
+	width:16.90140845%; /*100/710*/
+	margin-right: 20px;
+	margin-bottom: 25px;
+	float: left;
+}
+#choix_pokemon article {
+	width: 100px;
+	padding: 10px 10px;
+	border: 1px solid #DFDFDF;
+}
+#choix_pokemon p {
+	width: 100%;
+	padding: 5px 0px ;
+	border: 1px solid black;
+	font-weight: bold;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+#btn_choisir, #btn_envoyer {
+	display: block;
+	margin: 0px auto;
+	padding: 10px 25px;
+	background-color: #395da9;
+	border: none;
+	color: #fff;
+	font-size: 100%;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
+#btn_envoyer {
+	margin-top: 30px;
+}
+#btn_envoyer:hover, #btn_choisir:hover {
+	background-color: #ffcb05;
+	color: #395da9;
+}
+
+															/*PAGE PERSO*/
+#container2 .vide {
+	display: block;
+	width: 25%;
+	margin: 0px auto;
+	padding-bottom: 5px;
+	font-size: 100%;
+	color: red;
+}
+
+#container2 a {
+	margin-left: 10px;
+	padding-bottom: 15px;
+}
+
+#container2 a {
+	margin-left: 10px;
+	padding-bottom: 15px;
+}
+
+#container2 #pokemon_grd {
+	background-color: red;
+	height: 500px;
+	width: 500px;
+	margin: 0px auto;
+}
+
+/*#container2 #info {
+	height: 100px;
+	border: 1px solid black;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-0-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}*/
+#container2 table {
+	margin: 0px auto;
+}
+
+#container2 #personnalisation_carte
+{
+	width: 41.66666667%; /*400/960*/
+	margin: 0px 0px 0px 20px;
+	float: left;
+}
+
+#coordonnees {
+
+	margin: 20px 0px;
+}
+#coordonnees input {
+	width: 210px;
+	margin: 5px 0px 12px;
+}
+
+#perso {
+	margin: 20px 0px;
+}
+#perso p {
+	margin-bottom: 5px;
+}
+
+/*FOOTER*/
+footer {
+	height: 10px;
+}
+
+															/*PAGE ADMINISTRATEUR*/
+
+#form_upload {
+	width: 50%;
+	margin: 0px auto;
+	padding: 20px 0px;
+	background-color: rgba(57, 94, 169, 0.8);
+	color: #ffcb05;
+}
+form#form_upload table {
+	margin: 0px auto;
+}
+form#form_upload tr td:first-child {
+	padding-right: 40px;
+}
+form#form_upload td {
+	padding-bottom: 10px;
+}
+
+.center {
+	display: block;
+	margin: 0px auto;
+	padding: 10px 20px;
+	background-color: #395da9;
+	border: 2px solid white;
+	color : white;
+}
+.center:hover {
+	background-color: white;
+	border: 2px solid #395da9;
+	color : #395da9;
+}
+

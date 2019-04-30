@@ -1,0 +1,4167 @@
+@charset "UTF-8";
+
+
+
+/*====================================================================================================================================RESET====================================================================================================================================
+
+*//* http://meyerweb.com/eric/tools/css/reset/ 
+
+   v2.0 | 20110126
+
+   License: none (public domain)
+
+*/
+
+a[title~=hosting] {
+    display: none !important;
+}
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed, 
+
+figure, figcaption, footer, header, hgroup, 
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+
+	margin: 0;
+
+	padding: 0;
+
+	border: 0;
+
+	font-size: 100%;
+
+	font: inherit;
+
+	vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+
+footer, header, hgroup, menu, nav, section {
+
+	display: block;
+
+}
+
+body {
+
+	line-height: 1;
+
+}
+
+ol, ul {
+
+	list-style: none;
+
+}
+
+blockquote, q {
+
+	quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+
+	content: '';
+
+	content: none;
+
+}
+
+table {
+
+	border-collapse: collapse;
+
+	border-spacing: 0;
+
+}
+
+/*====================================================================================================================================FIN RESET====================================================================================================================================
+
+/*POLICES*/
+
+@font-face {
+
+    font-family: 'Echinos';
+
+    src: url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.eot');
+
+    src: url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.eot') format('embedded-opentype'),
+
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.woff2') format('woff2'),
+
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.woff') format('woff'),
+
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.ttf') format('truetype'),
+
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.svg#EchinosParkScript_PERSONAL_USE_ONLY') format('svg');
+
+}
+
+
+
+
+/*GÉNÉRAUX*/
+
+body {
+
+	width: 100%;
+
+	font-family: Myriad Pro;
+
+}
+
+.nofloat {
+
+	clear: both; 
+
+}
+
+.img-reponsive {
+
+	width: 100%;
+
+	height: 100%;
+
+	display: block;
+
+}
+
+.source {
+	margin-top: 10px;
+
+	font-size: 80%;
+
+	font-style: italic;
+}
+
+#slider768 {
+
+	display: none;
+
+}
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- DEBUT 1201 et plus --------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:1201px) {
+
+/*HEADER*/
+
+header {
+
+	width: 100%;
+
+}
+
+#logo {
+
+	width: 210px;  /*11.5% = 210/1200 */
+
+	float: left;
+
+	margin: 0.65% 0px 0.65% 3.5%;
+
+}
+
+#logo_480, #logo_768 {
+
+	display: none;
+
+}
+
+#menu_h, #cssmenu {
+
+	display: none;
+
+}
+
+header nav {
+
+	width: 70%;  /* 210/1200 */
+
+	float: left;
+
+	margin-left: 7.65%;
+
+	padding: 51px 0px 0px;
+
+}
+
+header nav ul {
+
+	list-style-type: none;
+
+}
+
+header nav ul li {
+
+	margin-right: 4%;
+
+	float: left;
+
+}
+
+header nav ul li:last-child {
+
+	margin-right: 0px;
+
+}
+
+header nav a {
+
+	width: 135px; /*220px*/
+
+	padding: 14px 0px; 
+
+	display: inline-block; 
+
+	color: #000;
+
+	font: small-caps 160% Myriad Pro, Arial, sans-serif;	
+
+	text-align: center;  
+
+	text-decoration: none; 
+
+}
+
+header nav a:hover {
+
+	color: #1f76b8;
+
+}
+
+/*Pour que la couleur bleu reste sur Destination*/
+
+header nav li:hover > a {
+
+	color: #1f76b8;
+
+}
+
+header nav ul li {
+
+	display: inline-block; 
+
+	position: relative;
+
+}
+
+header ul li:hover > ul {
+
+	display: block;
+
+}
+
+header ul ul {
+
+	width: 100%;
+
+	display: none; 
+
+	position: absolute; 
+
+	background: #ffffff;
+
+	z-index: 9999;
+
+}
+
+header ul ul a {
+
+	color: #000;
+	
+	font-size: 100%;
+
+}
+
+header ul ul a:hover {
+
+	background-color: #1f76b8;
+
+	color: #ffffff;
+
+}
+
+
+
+
+/*CONTAINER*/
+
+#container {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+section #section_evasion {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/plage_pas.jpg) no-repeat center fixed;
+
+	background-size: cover;
+
+}
+
+section #section_textRight {
+
+	width: 50%;  /* 600/1200 */
+
+	height: ;
+
+	margin: auto 0px auto 38%;
+
+	padding: 50px 0px;
+
+	background-color: rgba(255, 255, 255, .5);
+
+	border: 4px solid #fff;
+
+	font-size: 200%;
+
+	text-align: justify center center;
+
+}
+
+section #section_textRight h1, section #section_textLeft h1 {
+
+	margin-bottom: 25px;
+
+	font-family: Echinos;
+
+	font-size: 230%;
+
+	letter-spacing: 0.2em;
+
+	text-align: center;
+
+}
+
+section #section_textRight p, section #section_textLeft p {
+
+	width: 50%;
+
+	margin: 0px auto;
+
+	line-height: 1.4em;
+
+	letter-spacing: 0.1em;
+
+}
+
+section #section_reve {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/plage_verre.jpg) no-repeat center fixed;
+
+	background-size: cover;
+
+	-webkit-background-size:cover;
+}
+
+section #section_textLeft {
+
+	width: 50%;  /* 600/1200 */
+
+	height: ;
+
+	margin: auto;
+
+	margin-right: 38%;
+
+	padding: 50px 0px;
+
+	background-color: rgba(255, 255, 255, .5);
+
+	border: 4px solid #fff;
+
+	font-size: 200%;
+
+	text-align: justify center center;
+
+}
+
+section #section_paradis {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/kayak.jpg) no-repeat center fixed;
+
+	background-size: cover;
+
+	-webkit-background-size:cover;
+}
+
+
+
+
+/*CONTAINER_APROPOS*/
+
+#container_apropos {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+#container_apropos h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_apropos #resume_apropos {
+
+	width: 45%; /*540/1200*/
+
+	margin: auto;
+
+	margin-bottom: 45px;
+
+}
+
+#container_apropos #resume_apropos p {
+
+	letter-spacing: 0.1em;
+
+	line-height: 2em;
+
+	text-align: justify;
+
+}
+
+#container_apropos section {
+
+	width: 100%;
+
+	height: auto;
+
+	display: table;
+
+}
+
+#container_apropos section + section {
+
+	margin-bottom: 45px;
+
+}
+
+#container_apropos #img_block_left {
+
+	width: 50%;
+
+	float: left;
+
+}
+
+#container_apropos #txt_block_right {
+
+	width: 50%;
+
+	float: left;
+
+	padding: 2% 0px 0px;
+
+}
+
+#container_apropos .vertical_middle {
+
+	width: 63.33333333333333%; /*380/600*/
+
+	margin: auto;
+
+}
+
+#container_apropos .vertical_middle p {
+
+	letter-spacing: 0.1em;
+
+	line-height: 150%;
+
+	text-align: justify left; 
+
+}
+
+#container_apropos section h2 {
+
+	margin-bottom: 8%;
+
+	font: 180% Echinos, Arial, sans-serif;
+
+	letter-spacing: 0.1em;	
+
+}
+
+#container_apropos #img_block_right {
+
+	width: 50%;
+
+	float: right;
+
+}
+
+#container_apropos #txt_block_left {
+
+	width: 50%;
+
+	float: right;
+
+	padding: 2% 0px 0px;
+
+}
+
+
+
+
+/*CONTAINER DESTINATION*/
+#container_destination {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+#container_destination h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_destination article {
+
+	width: 75%; /*900/1200*/
+
+	margin: 0px auto 40px;
+
+}
+
+#container_destination h2 {
+
+	margin-bottom: 25px;
+
+	font-size: 180%;
+
+	font-family: Echinos;
+
+	letter-spacing: 0.1em;
+
+}
+
+#container_destination #img_destination {
+
+	width: 100%;
+
+}
+
+#container_destination #description_destination {
+
+	margin-top: 25px;
+}
+
+#container_destination #description_destination p:first-child {
+
+	color: #353C42;
+
+	letter-spacing: 0.1em;
+
+	line-height: 1.5em;
+
+	text-align: justify;
+}
+
+
+
+
+/*CONTAINER_OFFRES*/
+
+#container_offres {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+#container_offres h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_offres article {
+
+	height: 300px;
+	
+	width: 85%; /*1020/1200*/
+
+	margin: auto;
+
+	margin-bottom: 30px;
+
+	padding: 10px 10px;
+
+	border: 1px solid #D8D1D1;
+}
+
+#container_offres #img_offre{
+
+	height: 300px;
+
+	width: 300px; /*300/1200*/
+
+	float: left;
+
+}
+
+#container_offres #description_offre{
+
+	width: 51%; /*620/1200*/
+
+	margin-left: 10%;
+
+	float: left;
+
+}
+
+#container_offres #description_offre h2{
+	
+	margin-bottom: 20px;
+
+	font-size: 120%;
+
+}
+
+#container_offres #description_offre h2 + p{
+
+	height: 140px;
+	
+	margin-bottom: 35px;
+
+	color: #353C42;
+
+	line-height: 1.3em;
+
+	text-align: justify;
+}
+
+#container_offres #description_offre p + p{
+
+	margin-bottom: 15px;
+
+	color: #FF9A22;
+
+	font-size: 120%;
+		
+	font-weight: bold;
+
+	text-align: center;
+}
+
+#container_offres #description_offre button {
+
+	display: block;
+
+	width: 23%;	/*140/620*/
+
+	margin: auto;
+
+	padding: 1% 0px;
+
+	color: #ffffff;
+
+	background-color: #FF9A22;
+
+	border: none;
+
+	font-weight: bold;
+}
+
+#container_offres #description_offre button:hover {
+
+	background-color: #DB7905;
+}
+
+
+
+
+/*CONTACT*/
+#noscoordonnees, #message {
+
+	width: 38.33333333333333%; /*460/1200*/
+
+	height: 525px;
+
+	float: left;
+
+	margin-bottom: 50px;
+
+	padding-bottom: 20px;
+
+	border: 1px solid black;
+
+	text-align: center;
+
+}
+
+#noscoordonnees {
+
+	margin-left: 7.5%;
+
+}
+
+#message {
+
+	margin: 0px 7.5%;
+
+}
+
+#noscoordonnees h2, #message h2 {
+
+	margin: 30px 0px;
+
+	font: 180% Echinos, Arial, sans-serif;
+
+	letter-spacing: 0.1em;	
+
+}
+
+.strong {
+
+	font-size: 160%;
+
+	font-weight: bold;
+
+}
+
+#noscoordonnees p {
+
+	margin: 10px 0px 40px;
+
+	font-size: 130%;
+
+}
+
+#contact_message label {
+
+	width: 15%;
+
+	margin-right: 2%;
+
+	display: inline-block;
+
+	text-align: left;
+
+}
+
+.input_message {
+
+	vertical-align: top;
+
+}
+
+#contact_message input, #contact_message textarea {
+
+	width: 52.17391304347826%;	/*240/460*/
+
+}
+
+#contact_message p {
+
+	margin: 20px 0px;
+
+}
+
+input[type="submit"] {
+
+	padding: 15px;
+
+	background-color: #1f76b8;
+
+	border: none;
+
+	color: #ffffff;
+
+	font: bold 140% Myriad Pro, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+}
+
+input[type="submit"]:hover {
+
+	background-color: #9bc7e9;
+
+}
+
+
+
+
+/*FOOTER*/
+footer {
+
+/*	height: 360px;
+*/
+	width: 100%;
+
+	position: relative;
+
+}
+
+footer h1 {
+
+	margin-bottom: 50px;
+
+	padding-top: 80px;
+
+	color: white;
+
+	font-size: 180%;
+
+	letter-spacing: 0.2em;
+
+	text-align: center;
+
+}
+
+#reseaux_flex {
+
+	width: 100%;
+
+	height: 360px;
+
+	background: url(img/plage_caillou.jpg) no-repeat center;
+
+	background-size: cover;
+}
+
+#reseaux {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	width: 30.416666666666%; /* 365/1200 */
+
+	margin: auto;
+
+}
+
+#reseaux a {
+
+	margin: auto;
+}
+
+#reseaux img {
+
+	margin: auto;
+
+	opacity: 1;
+
+}
+
+#reseaux img:hover {
+
+	opacity: 0.5;
+
+}
+
+footer section {
+
+	width: 100%;
+
+	height: 300px;
+
+	background-color: #1f76b8;
+
+}
+
+footer nav {
+
+	width: 58.75%;  
+
+	margin: 0px auto 50px;
+
+	padding: 45px 0px 0px;
+
+	text-align: center;
+
+}
+
+footer nav ul{
+
+	width: 100%;
+
+	/*text-align: right;*/
+
+}
+
+footer nav li {
+
+	display: inline;
+
+	margin-right: 9%;
+
+	list-style: none;
+
+	text-align: right;
+
+}
+
+footer nav ul li:last-child {
+
+	margin-right: 0px;
+
+}
+
+footer nav a {
+
+	color: #000;
+
+	font: 120% Myriad Pro, Arial, sans-serif;
+
+	text-decoration: none;
+
+}
+
+footer nav a:hover {
+
+	color: white;
+
+}
+
+/*Pour que la couleur bleu reste sur Destination*/
+
+footer nav li:hover > a {
+
+	color: #ffffff;
+
+}
+
+footer nav ul li {
+
+	display: inline-block; 
+
+	position: relative;
+
+}
+
+footer ul li:hover > ul {
+
+	display: block;
+
+}
+
+footer ul ul {
+
+	width: 100%;
+
+	display: none; 
+
+	position: absolute; 
+
+	background: #ffffff;
+
+	z-index: 9999;
+
+}
+
+footer ul ul li {
+
+	width: 100%;
+
+	margin-right: 0px;
+
+	padding: 10px 0px;
+
+	font-size: 86%;
+
+	text-align: center;
+}
+
+footer ul ul li:hover {
+
+	background-color: #0091ff;
+}
+
+footer ul ul a {
+
+	color: #000;
+	
+	font-size: 100%;
+
+}
+
+/*footer ul ul a:hover {
+
+	background-color: #1f76b8;
+
+	color: #ffffff;
+
+}*/
+
+footer nav + p {
+
+	margin-bottom: 45px;
+
+	color: white;
+
+	font: 120% Myriad Pro, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+
+	text-align: center;
+
+}
+
+footer hr {
+
+	width: 75%;
+
+	margin-bottom: 35px;
+
+}
+
+footer hr + p {
+
+	text-align: center;
+
+}
+
+
+
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------- FIN 1201 + --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- DEBUT 769 - 1200 --------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:769px) and (max-width:1200px) {
+
+/*HEADER*/
+
+header {
+
+	width: 100%;
+
+}
+
+#logo_768 {
+
+	width: 150px;  
+
+	float: left;
+
+	margin: 0.65% 0px 0.65% 3.5%;
+
+}
+
+#logo_480, #logo {
+
+	display: none;
+
+}
+
+#menu_h, #cssmenu {
+
+	display: none;
+
+}
+
+header nav {
+
+	width: 70%;  /* 210/1200 */
+
+	float: left;
+
+	margin-left: 5%;
+
+	padding: 20px 0px 0px;
+
+	font-size: 70%;
+
+}
+
+header nav ul {
+
+	list-style-type: none;
+
+}
+
+header nav ul li {
+
+	float: left;
+
+}
+
+header nav ul li:last-child {
+
+	margin-right: 0px;
+
+}
+
+header nav a {
+
+	width: 100px;
+
+	padding: 14px 0px; 
+
+	display: inline-block; 
+
+	color: #000;
+
+	font: small-caps 160% Myriad Pro, Arial, sans-serif;	
+
+	text-align: center;  
+
+	text-decoration: none; 
+
+}
+
+header nav a:hover {
+
+	color: #1f76b8;
+
+}
+
+/*Pour que la couleur bleu reste sur Destination*/
+
+header nav li:hover > a {
+
+	color: #1f76b8;
+
+}
+
+header nav ul li {
+
+	display: inline-block; 
+
+	position: relative;
+
+}
+
+header ul li:hover > ul {
+
+	display: block;
+
+}
+
+header ul ul {
+
+	width: 100%;
+
+	display: none; 
+
+	position: absolute; 
+
+	background: #ffffff;
+
+	z-index: 9999;
+
+}
+
+header ul ul a {
+
+	color: #000;
+	
+	font-size: 120%;
+
+}
+
+header ul ul a:hover {
+
+	background-color: #1f76b8;
+
+	color: #ffffff;
+
+}
+
+.picSlider {
+
+	display: none;
+
+}
+
+#slider768 {
+
+	display: block;
+
+	height: 769px;
+
+	width: 100%;
+
+	position: relative;
+
+	background: url(img/slider/coastline.jpg) no-repeat center;
+
+	background-size: cover;
+}
+
+
+
+
+
+/*CONTAINER*/
+
+#container {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+section #section_evasion {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/plage_pas.jpg) no-repeat center;
+
+	background-size: 100% 100%;
+
+}
+
+section #section_textRight {
+
+	width: 50%;  /* 600/1200 */
+
+	height: ;
+
+	margin: auto 0px auto 38%;
+
+	padding: 50px 0px;
+
+	background-color: rgba(255, 255, 255, .5);
+
+	border: 4px solid #fff;
+
+	font-size: 90%;
+
+	text-align: justify center center;
+
+}
+
+section #section_textRight h1, section #section_textLeft h1 {
+
+	margin-bottom: 25px;
+
+	font-family: Echinos;
+
+	font-size: 230%;
+
+	letter-spacing: 0.2em;
+
+	text-align: center;
+
+}
+
+section #section_textRight p, section #section_textLeft p {
+
+	width: 50%;
+
+	margin: 0px auto;
+
+	line-height: 1.4em;
+
+	letter-spacing: 0.1em;
+
+}
+
+section #section_reve {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/plage_verre.jpg) no-repeat center;
+
+	background-size: auto;
+
+}
+
+section #section_textLeft {
+
+	width: 50%;  /* 600/1200 */
+
+	height: ;
+
+	margin: auto;
+
+	margin-right: 38%;
+
+	padding: 50px 0px;
+
+	background-color: rgba(255, 255, 255, .5);
+
+	border: 4px solid #fff;
+
+	font-size: 90%;
+
+	text-align: justify center center;
+
+}
+
+section #section_paradis {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/kayak.jpg) no-repeat center;
+
+	background-size: auto;
+
+}
+
+
+
+/*CONTAINER_APROPOS*/
+
+#container_apropos {
+
+	height:100%;
+
+	width: 100%;
+
+	font-size: 80%;
+
+}
+
+#container_apropos h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_apropos #resume_apropos {
+
+	width: 45%; /*540/1200*/
+
+	margin: auto;
+
+	margin-bottom: 45px;
+
+}
+
+#container_apropos #resume_apropos p {
+
+	letter-spacing: 0.1em;
+
+	line-height: 2em;
+
+	text-align: justify;
+
+}
+
+#container_apropos section {
+
+	width: 100%;
+
+	height: auto;
+
+	display: table;
+
+}
+
+#container_apropos section + section {
+
+	margin-bottom: 45px;
+
+}
+
+#container_apropos #img_block_left {
+
+	width: 50%;
+
+	float: left;
+
+}
+
+#container_apropos #txt_block_right {
+
+	width: 50%;
+
+	float: left;
+
+	padding: 2% 0px 0px;
+
+	font-size: 85%;
+
+}
+
+#container_apropos .vertical_middle {
+
+	width: 63.33333333333333%; /*380/600*/
+
+	margin: auto;
+
+}
+
+#container_apropos .vertical_middle p {
+
+	letter-spacing: 0.15em;
+
+	line-height: 130%;
+
+	text-align: justify left; 
+
+}
+
+#container_apropos section h2 {
+
+	margin-bottom: 2%;
+
+	font: 180% Echinos, Arial, sans-serif;
+
+	letter-spacing: 0.1em;	
+
+}
+
+#container_apropos #img_block_right {
+
+	width: 50%;
+
+	float: right;
+
+}
+
+#container_apropos #txt_block_left {
+
+	width: 50%;
+
+	float: right;
+
+	padding: 2% 0px 0px;
+
+	font-size: 85%;
+
+}
+
+
+
+
+/*CONTAINER DESTINATION*/
+#container_destination {
+
+	height:100%;
+
+	width: 100%;
+
+	font-size: 100%;
+
+}
+
+#container_destination h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_destination article {
+
+	width: 75%; /*900/1200*/
+
+	margin: 0px auto 40px;
+
+}
+
+#container_destination h2 {
+
+	margin-bottom: 25px;
+
+	font-size: 180%;
+
+	font-family: Echinos;
+
+	letter-spacing: 0.1em;
+
+}
+
+#container_destination #img_destination {
+
+	width: 100%;
+
+}
+
+#container_destination #description_destination {
+
+	margin-top: 25px;
+}
+
+#container_destination #description_destination p:first-child {
+
+	color: #353C42;
+
+	letter-spacing: 0.1em;
+
+	line-height: 1.5em;
+
+	text-align: justify;
+}
+
+
+
+
+/*CONTAINER_OFFRES*/
+
+#container_offres {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+#container_offres h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_offres article {
+
+	width: 90%; /*1020/1200*/
+
+	margin: auto;
+
+	margin-bottom: 30px;
+
+	padding: 10px 10px;
+
+	border: 1px solid #D8D1D1;
+}
+
+#container_offres #img_offre {
+
+	height: 150px;
+
+	width: 150px; /*300/1200*/
+
+	float: left;
+
+}
+
+#container_offres #description_offre {
+
+	width: 51%; /*620/1200*/
+
+	margin-left: 10%;
+
+	float: left;
+
+}
+
+#container_offres #description_offre h2 {
+	
+	margin-bottom: 20px;
+
+	font-size: 120%;
+
+}
+
+#container_offres #description_offre h2 + p {
+
+	margin-bottom: 35px;
+
+	color: #353C42;
+
+	line-height: 1.3em;
+
+	text-align: justify;
+}
+
+#container_offres #description_offre p + p {
+
+	margin-bottom: 15px;
+
+	color: #FF9A22;
+
+	font-size: 120%;
+		
+	font-weight: bold;
+
+	text-align: center;
+}
+
+#container_offres #description_offre button {
+
+	display: block;
+
+	width: 23%;	/*140/620*/
+
+	margin: auto;
+
+	padding: 1% 0px;
+
+	color: #ffffff;
+
+	background-color: #FF9A22;
+
+	border: none;
+
+	font-weight: bold;
+}
+
+#container_offres #description_offre button:hover {
+
+	background-color: #DB7905;
+}
+
+
+
+
+/*CONTACT*/
+#noscoordonnees, #message {
+
+	width: 42%; /*460/1200*/
+
+	height: 525px;
+
+	float: left;
+
+	margin-bottom: 50px;
+
+	padding-bottom: 20px;
+
+	border: 1px solid black;
+
+	font-size: 90%;
+
+	text-align: center;
+
+}
+
+#noscoordonnees {
+
+	margin-left: 5%;
+
+}
+
+#message {
+
+	margin: 0px 5%;
+
+}
+
+#noscoordonnees h2, #message h2 {
+
+	margin: 30px 0px;
+
+	font: 180% Echinos, Arial, sans-serif;
+
+	letter-spacing: 0.1em;	
+
+}
+
+.strong {
+
+	font-size: 160%;
+
+	font-weight: bold;
+
+}
+
+#noscoordonnees p {
+
+	margin: 10px 0px 40px;
+
+	font-size: 130%;
+
+}
+
+#contact_message label {
+
+	width: 15%;
+
+	margin-right: 2%;
+
+	display: inline-block;
+
+	text-align: left;
+
+}
+
+.input_message {
+
+	vertical-align: top;
+
+}
+
+#contact_message input, #contact_message textarea {
+
+	width: 52.17391304347826%;	/*240/460*/
+
+}
+
+#contact_message p {
+
+	margin: 20px 0px;
+
+}
+
+input[type="submit"] {
+
+	padding: 15px;
+
+	background-color: #1f76b8;
+
+	border: none;
+
+	color: #ffffff;
+
+	font: bold 140% Myriad Pro, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+}
+
+input[type="submit"]:hover {
+
+	background-color: #9bc7e9;
+
+}
+
+
+
+
+/*FOOTER*/
+footer {
+
+/*	height: 360px;
+*/
+	width: 100%;
+
+	position: relative;
+
+}
+
+footer h1 {
+
+	margin-bottom: 50px;
+
+	padding-top: 80px;
+
+	color: white;
+
+	font-size: 180%;
+
+	letter-spacing: 0.2em;
+
+	text-align: center;
+
+}
+
+#reseaux_flex {
+
+	width: 100%;
+
+	height: 360px;
+
+	background: url(img/plage_caillou.jpg) no-repeat center;
+
+	background-size: cover;
+}
+
+#reseaux {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	width: 42%; /* 365/1200 */
+
+	margin: auto;
+
+}
+
+#reseaux a {
+
+	margin: auto;
+}
+
+#reseaux img {
+
+	margin: auto;
+
+	opacity: 1;
+
+}
+
+#reseaux img:hover {
+
+	opacity: 0.5;
+
+}
+
+footer section {
+
+	width: 100%;
+
+	height: 300px;
+
+	background-color: #1f76b8;
+
+}
+
+footer nav {
+
+	width: 100%;  
+
+	margin: 0px auto 50px;
+
+	padding: 45px 0px 0px;
+
+	text-align: center;
+
+}
+
+footer nav ul{
+
+	width: 100%;
+
+	/*text-align: right;*/
+
+}
+
+footer nav li {
+
+	display: inline;
+
+	margin-right: 9%;
+
+	list-style: none;
+
+	text-align: right;
+
+}
+
+footer nav ul li:last-child {
+
+	margin-right: 0px;
+
+}
+
+footer nav a {
+
+	color: #000;
+
+	font: 120% Myriad Pro, Arial, sans-serif;
+
+	text-decoration: none;
+
+}
+
+footer nav a:hover {
+
+	color: white;
+
+}
+
+/*Pour que la couleur bleu reste sur Destination*/
+
+footer nav li:hover > a {
+
+	color: #ffffff;
+
+}
+
+footer nav ul li {
+
+	display: inline-block; 
+
+	position: relative;
+
+}
+
+footer ul li:hover > ul {
+
+	display: block;
+
+}
+
+footer ul ul {
+
+	width: 100%;
+
+	display: none; 
+
+	position: absolute; 
+
+	background: #ffffff;
+
+	z-index: 9999;
+
+}
+
+footer ul ul li {
+
+	width: 100%;
+
+	margin-right: 0px;
+
+	padding: 10px 0px;
+
+	font-size: 86%;
+
+	text-align: center;
+}
+
+footer ul ul li:hover {
+
+	background-color: #0091ff;
+}
+
+footer ul ul a {
+
+	color: #000;
+	
+	font-size: 100%;
+
+}
+
+footer nav + p {
+
+	margin-bottom: 45px;
+
+	color: white;
+
+	font: 120% Myriad Pro, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+
+	text-align: center;
+
+}
+
+footer hr {
+
+	width: 75%;
+
+	margin-bottom: 35px;
+
+}
+
+footer hr + p {
+
+	text-align: center;
+
+}
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------- FIN 769 - 1200 --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- DEBUT 481 - 768 --------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:481px) and (max-width:768px) {
+
+header {
+
+	width: 100%;
+
+}
+
+#logo, #logo_768  {
+	
+	display: none;
+
+}
+
+#logo_480 {
+
+	width: 100%;
+
+	margin: 5px 0px;
+
+	text-align: center;
+
+}
+
+#menu_h, #cssmenu {
+
+	display: block;
+
+}
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  list-style: none;
+
+  line-height: 1;
+
+  display: block;
+
+  position: relative;
+
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+
+}
+
+#cssmenu {
+
+  width: 100%;
+
+  font-family: Helvetica, Arial, sans-serif;
+
+  color: #ffffff;
+
+  text-align: center;
+
+}
+
+#cssmenu ul ul {
+
+  display: none;
+
+}
+
+.align-right {
+
+  float: right;
+
+}
+
+#cssmenu > ul > li > a {
+
+  padding: 15px 20px;
+
+  border-left: 1px solid #1682ba;
+
+  border-right: 1px solid #1682ba;
+
+  border-top: 1px solid #1682ba;
+
+  cursor: pointer;
+
+  z-index: 2;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+    color: #ffffff;
+
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+
+  background: #36aae7;
+
+  background: -webkit-linear-gradient(#36aae7, #1fa0e4);
+
+  background: -moz-linear-gradient(#36aae7, #1fa0e4);
+
+  background: -o-linear-gradient(#36aae7, #1fa0e4);
+
+  background: -ms-linear-gradient(#36aae7, #1fa0e4);
+
+  background: linear-gradient(#36aae7, #1fa0e4);
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+}
+
+#cssmenu > ul > li > a:hover, #cssmenu > ul > li.active > a, #cssmenu > ul > li.open > a {
+
+  color: #eeeeee;
+
+  background: #1fa0e4;
+
+  background: -webkit-linear-gradient(#1fa0e4, #1992d1);
+
+  background: -moz-linear-gradient(#1fa0e4, #1992d1);
+
+  background: -o-linear-gradient(#1fa0e4, #1992d1);
+
+  background: -ms-linear-gradient(#1fa0e4, #1992d1);
+
+  background: linear-gradient(#1fa0e4, #1992d1);
+
+}
+
+#cssmenu > ul > li.open > a {
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.15);
+
+  border-bottom: 1px solid #1682ba;
+}
+
+#cssmenu > ul > li:last-child > a, #cssmenu > ul > li.last > a {
+
+  border-bottom: 1px solid #1682ba;
+
+}
+
+.holder {
+
+  width: 0;
+
+  height: 0;
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+}
+
+.holder::after, .holder::before {
+
+  display: block;
+
+  position: absolute;
+
+  content: "";
+
+  width: 6px;
+
+  height: 6px;
+
+  right: 20px;
+
+  z-index: 10;
+
+  -webkit-transform: rotate(-135deg);
+
+  -moz-transform: rotate(-135deg);
+
+  -ms-transform: rotate(-135deg);
+
+  -o-transform: rotate(-135deg);
+
+  transform: rotate(-135deg);
+
+}
+
+.holder::after {
+
+  top: 17px;
+
+  border-top: 2px solid #ffffff;
+
+  border-left: 2px solid #ffffff;
+
+}
+
+#cssmenu > ul > li > a:hover > span::after, #cssmenu > ul > li.active > a > span::after, #cssmenu > ul > li.open > a > span::after {
+
+  border-color: #eeeeee;
+
+}
+
+.holder::before {
+
+  top: 18px;
+
+  border-top: 2px solid;
+
+  border-left: 2px solid;
+
+  border-top-color: inherit;
+
+  border-left-color: inherit;
+
+}
+
+#cssmenu ul ul li a {
+
+  cursor: pointer;
+
+  border-bottom: 1px solid #32373e;
+
+  border-left: 1px solid #32373e;
+
+  border-right: 1px solid #32373e;
+
+  padding: 10px 20px;
+
+  z-index: 1;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  color: #eeeeee;
+
+  background: #49505a;
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+}
+
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li.open > a, #cssmenu ul ul li.active > a {
+
+  background: #424852;
+
+  color: #ffffff;
+
+}
+
+#cssmenu ul ul li:first-child > a {
+
+  box-shadow: none;
+
+}
+
+#cssmenu ul ul ul li:first-child > a {
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+}
+
+#cssmenu ul ul ul li a {
+
+  padding-left: 30px;
+
+}
+
+#cssmenu > ul > li > ul > li:last-child > a, #cssmenu > ul > li > ul > li.last > a {
+
+  border-bottom: 0;
+
+}
+
+#cssmenu > ul > li > ul > li.open:last-child > a, #cssmenu > ul > li > ul > li.last.open > a {
+
+  border-bottom: 1px solid #32373e;
+
+}
+
+#cssmenu > ul > li > ul > li.open:last-child > ul > li:last-child > a {
+
+  border-bottom: 0;
+
+}
+
+#cssmenu ul ul li.active > a::after, #cssmenu ul ul li.open > a::after, #cssmenu ul ul li > a:hover::after {
+
+  border-color: #ffffff;
+
+}
+
+header nav {
+
+	display: none;
+
+}
+
+.picSlider {
+
+	display: none;
+
+}
+
+
+
+
+/*CONTAINER*/
+#container {
+
+	height:100%;
+
+	width: 100%;
+
+	font-size: 70%;
+
+}
+
+section #section_evasion {
+
+	display: flex;
+
+	display: -webkit-flex;
+
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/plage_pas.jpg) no-repeat center;
+
+	background-size: cover;
+
+	-webkit-background-size: cover;
+
+}
+
+section #section_textRight {
+
+	width: 60%;
+
+	margin: auto;
+
+	padding: 25px 0px;
+
+	background-color: rgba(255, 255, 255, .5);
+
+	border: 4px solid #fff;
+
+	font-size: 120%;
+
+	text-align: justify center center;
+
+}
+
+section #section_textRight h1, section #section_textLeft h1 {
+
+	margin-bottom: 25px;
+
+	font-family: Echinos;
+
+	font-size: 230%;
+
+	letter-spacing: 0.2em;
+
+	text-align: center;
+
+}
+
+section #section_textRight p, section #section_textLeft p {
+
+	width: 50%;
+
+	margin: 0px auto;
+
+	line-height: 1.4em;
+
+	letter-spacing: 0.1em;
+
+}
+
+section #section_reve {
+
+	display: flex;
+
+	display: -webkit-flex;
+
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/plage_verre.jpg) no-repeat center;
+
+	background-size: cover;
+
+	-webkit-background-size: cover;
+
+}
+
+section #section_textLeft {
+
+	width: 60%; 
+
+	margin: auto;
+
+	padding: 25px 0px;
+
+	background-color: rgba(255, 255, 255, .5);
+
+	border: 4px solid #fff;
+
+	font-size: 120%;
+
+	text-align: justify center center;
+
+}
+
+section #section_paradis {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/kayak.jpg) no-repeat center;
+
+	background-size: cover;
+
+	-webkit-background-size: cover;
+
+}
+
+
+
+/*CONTAINER_APROPOS*/
+#container_apropos {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+#container_apropos h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_apropos #resume_apropos {
+
+	width: 100%;
+
+	margin: auto;
+
+	margin-bottom: 45px;
+
+}
+
+#container_apropos #resume_apropos p {
+
+	margin: 0px 40px;
+
+	letter-spacing: 0.1em;
+
+	line-height: 150%;
+
+	text-align: justify;
+
+}
+
+#container_apropos section {
+
+	width: 100%;
+
+	height: auto;
+
+	display: table;
+
+}
+
+#container_apropos #img_block_left {
+
+	width: 100%;
+
+}
+
+#container_apropos #txt_block_right {
+
+	width: 100%;
+
+	padding: 2% 0px 0px;
+
+}
+
+#container_apropos .vertical_middle {
+
+	width: 100%;
+
+	margin: auto;
+
+	margin-bottom: 30px;
+
+}
+
+#container_apropos .vertical_middle p {
+
+	margin: 0px 40px;
+
+	letter-spacing: 0.1em;
+
+	line-height: 150%;
+
+	text-align: justify left; 
+
+}
+
+#container_apropos section h2 {
+
+	margin: 20px 0px;
+
+	font: 180% Echinos, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+
+	text-align: center;	
+
+}
+
+#container_apropos #img_block_right {
+
+	width: 100%;
+
+}
+
+#container_apropos #txt_block_left {
+
+	width: 100%;
+
+	padding: 2% 0px 0px;
+
+}
+
+
+
+/*CONTAINER DESTINATION*/
+#container_destination {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+#container_destination h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_destination article {
+
+	width: 85%;
+
+	margin: 0px auto 40px;
+
+}
+
+#container_destination h2 {
+
+	margin-bottom: 25px;
+
+	font-size: 180%;
+
+	font-family: Echinos;
+
+	letter-spacing: 0.1em;
+
+}
+
+#container_destination #img_destination {
+
+	width: 100%;
+
+}
+
+#container_destination #description_destination {
+
+	margin-top: 25px;
+}
+
+#container_destination #description_destination p:first-child {
+
+	color: #353C42;
+
+	letter-spacing: 0.1em;
+
+	line-height: 1.5em;
+
+	text-align: justify;
+}
+
+
+
+/*CONTAINER_OFFRES*/
+
+#container_offres {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+#container_offres h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_offres article {
+
+	width: 85%; /*1020/1200*/
+
+	margin: auto;
+
+	margin-bottom: 30px;
+
+	padding: 10px 10px;
+
+	border: 1px solid #D8D1D1;
+}
+
+#container_offres #img_offre{
+
+	height: 125px;
+
+	width: 125px;
+
+	float: left;
+
+}
+
+#container_offres #description_offre{
+
+	width: 60%;
+
+	margin-left: 10%;
+
+	float: left;
+
+}
+
+#container_offres #description_offre h2{
+	
+	margin-bottom: 20px;
+
+	font-size: 120%;
+
+}
+
+#container_offres #description_offre h2 + p{
+
+	margin-bottom: 35px;
+
+	color: #353C42;
+
+	line-height: 1.3em;
+
+	text-align: justify;
+}
+
+#container_offres #description_offre p + p{
+
+	margin-bottom: 15px;
+
+	color: #FF9A22;
+
+	font-size: 120%;
+		
+	font-weight: bold;
+
+	text-align: center;
+}
+
+#container_offres #description_offre button {
+
+	display: block;
+
+	width: 23%;	/*140/620*/
+
+	margin: auto;
+
+	padding: 1% 0px;
+
+	color: #ffffff;
+
+	background-color: #FF9A22;
+
+	border: none;
+
+	font-weight: bold;
+}
+
+#container_offres #description_offre button:hover {
+
+	background-color: #DB7905;
+}
+
+
+
+/*CONTACT*/
+#noscoordonnees, #message {
+
+	width: 80%;
+
+	height: 525px;
+
+	margin: 0px auto 50px;
+
+	padding-bottom: 20px;
+
+	border: 1px solid black;
+
+	text-align: center;
+
+}
+
+#noscoordonnees h2, #message h2 {
+
+	margin: 30px 0px;
+
+	font: 180% Echinos, Arial, sans-serif;
+
+	letter-spacing: 0.1em;	
+
+}
+
+.strong {
+
+	font-size: 160%;
+
+	font-weight: bold;
+
+}
+
+#noscoordonnees p {
+
+	margin: 10px 0px 40px;
+
+	font-size: 130%;
+
+}
+
+#contact_message label {
+
+	width: 30%;
+
+	margin-right: 2%;
+
+	display: inline-block;
+
+	text-align: left;
+
+}
+
+.input_message {
+
+	vertical-align: top;
+
+}
+
+#contact_message input, #contact_message textarea {
+
+	width: 52.17391304347826%;	/*240/460*/
+
+}
+
+#contact_message p {
+
+	margin: 20px 0px;
+
+}
+
+input[type="submit"] {
+
+	padding: 15px;
+
+	background-color: #1f76b8;
+
+	border: none;
+
+	color: #ffffff;
+
+	font: bold 140% Myriad Pro, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+}
+
+input[type="submit"]:hover {
+
+	background-color: #9bc7e9;
+
+}
+
+
+
+
+/*FOOTER*/
+footer {
+
+/*	height: 360px;
+*/
+	width: 100%;
+
+	position: relative;
+
+}
+
+footer h1 {
+
+	margin-bottom: 50px;
+
+	padding-top: 80px;
+
+	color: white;
+
+	font-size: 180%;
+
+	letter-spacing: 0.2em;
+
+	text-align: center;
+
+}
+
+#reseaux_flex {
+
+	width: 100%;
+
+	height: 360px;
+
+	background: url(img/plage_caillou.jpg) no-repeat center;
+
+	background-size: cover;
+}
+
+#reseaux {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	width: 50%; /* 365/1200 */
+
+	margin: auto;
+
+}
+
+#reseaux a {
+
+	margin: auto;
+}
+
+#reseaux img {
+
+	margin: auto;
+
+	opacity: 1;
+
+}
+
+#reseaux img:hover {
+
+	opacity: 0.5;
+
+}
+
+footer section {
+
+	width: 100%;
+
+	background-color: #1f76b8;
+
+}
+
+footer nav {
+
+	width: 100%;  
+
+	margin: 0px auto 50px;
+
+	padding: 45px 0px 0px;
+
+	text-align: center;
+
+}
+
+footer nav ul{
+
+	width: 100%;
+
+}
+
+footer nav li {
+
+	display: inline;
+
+	margin-right: 3%;
+
+	font-size: 80%;
+
+	list-style: none;
+
+	text-align: right;
+
+}
+
+footer nav ul li:last-child {
+
+	margin-right: 0px;
+
+}
+
+footer nav a {
+
+	color: #000;
+
+	font: 120% Myriad Pro, Arial, sans-serif;
+
+	text-decoration: none;
+
+}
+
+footer nav a:hover {
+
+	color: white;
+
+}
+
+/*Pour que la couleur bleu reste sur Destination*/
+
+footer nav li:hover > a {
+
+	color: #ffffff;
+
+}
+
+footer nav ul li {
+
+	display: inline-block; 
+
+	position: relative;
+
+}
+
+footer ul li:hover > ul {
+
+	display: block;
+
+}
+
+footer ul ul {
+
+	width: 100%;
+
+	display: none; 
+
+	position: absolute; 
+
+	background: #ffffff;
+
+	z-index: 9999;
+
+}
+
+footer ul ul li {
+
+	width: 100%;
+
+	margin-right: 0px;
+
+	padding: 10px 0px;
+
+	font-size: 86%;
+
+	text-align: center;
+}
+
+footer ul ul li:hover {
+
+	background-color: #0091ff;
+}
+
+footer ul ul a {
+
+	color: #000;
+	
+	font-size: 100%;
+
+}
+
+footer nav + p {
+
+	margin-bottom: 45px;
+
+	color: white;
+
+	font: 120% Myriad Pro, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+
+	text-align: center;
+
+}
+
+footer hr {
+
+	width: 75%;
+
+	margin-bottom: 35px;
+
+}
+
+footer hr + p {
+
+	text-align: center;
+
+	padding-bottom: 10px;
+
+}
+
+}	
+/*-------------------------------------------------------------------------------------------------------------------------- FIN 481 - 768 --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- DEBUT 480 --------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:480px) {
+
+/*HEADER*/
+header {
+
+	width: 100%;
+
+}
+
+#logo, #logo_768  {
+	
+	display: none;
+
+}
+
+#logo_480 {
+
+	width: 100%;
+
+	margin: 5px 0px;
+
+	text-align: center;
+
+}
+
+#menu_h, #cssmenu {
+
+	display: block;
+
+}
+
+#cssmenu, #cssmenu ul, #cssmenu ul li, #cssmenu ul li a {
+
+  margin: 0;
+
+  padding: 0;
+
+  border: 0;
+
+  list-style: none;
+
+  line-height: 1;
+
+  display: block;
+
+  position: relative;
+
+  -webkit-box-sizing: border-box;
+
+  -moz-box-sizing: border-box;
+
+  box-sizing: border-box;
+
+}
+
+#cssmenu {
+
+  width: 100%;
+
+  font-family: Helvetica, Arial, sans-serif;
+
+  color: #ffffff;
+
+  text-align: center;
+
+}
+
+#cssmenu ul ul {
+
+  display: none;
+
+}
+
+.align-right {
+
+  float: right;
+
+}
+
+#cssmenu > ul > li > a {
+
+  padding: 15px 20px;
+
+  border-left: 1px solid #1682ba;
+
+  border-right: 1px solid #1682ba;
+
+  border-top: 1px solid #1682ba;
+
+  cursor: pointer;
+
+  z-index: 2;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  text-decoration: none;
+
+    color: #ffffff;
+
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+
+  background: #36aae7;
+
+  background: -webkit-linear-gradient(#36aae7, #1fa0e4);
+
+  background: -moz-linear-gradient(#36aae7, #1fa0e4);
+
+  background: -o-linear-gradient(#36aae7, #1fa0e4);
+
+  background: -ms-linear-gradient(#36aae7, #1fa0e4);
+
+  background: linear-gradient(#36aae7, #1fa0e4);
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+}
+
+#cssmenu > ul > li > a:hover, #cssmenu > ul > li.active > a, #cssmenu > ul > li.open > a {
+
+  color: #eeeeee;
+
+  background: #1fa0e4;
+
+  background: -webkit-linear-gradient(#1fa0e4, #1992d1);
+
+  background: -moz-linear-gradient(#1fa0e4, #1992d1);
+
+  background: -o-linear-gradient(#1fa0e4, #1992d1);
+
+  background: -ms-linear-gradient(#1fa0e4, #1992d1);
+
+  background: linear-gradient(#1fa0e4, #1992d1);
+
+}
+
+#cssmenu > ul > li.open > a {
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.15);
+
+  border-bottom: 1px solid #1682ba;
+}
+
+#cssmenu > ul > li:last-child > a, #cssmenu > ul > li.last > a {
+
+  border-bottom: 1px solid #1682ba;
+
+}
+
+.holder {
+
+  width: 0;
+
+  height: 0;
+
+  position: absolute;
+
+  top: 0;
+
+  right: 0;
+
+}
+
+.holder::after, .holder::before {
+
+  display: block;
+
+  position: absolute;
+
+  content: "";
+
+  width: 6px;
+
+  height: 6px;
+
+  right: 20px;
+
+  z-index: 10;
+
+  -webkit-transform: rotate(-135deg);
+
+  -moz-transform: rotate(-135deg);
+
+  -ms-transform: rotate(-135deg);
+
+  -o-transform: rotate(-135deg);
+
+  transform: rotate(-135deg);
+
+}
+
+.holder::after {
+
+  top: 17px;
+
+  border-top: 2px solid #ffffff;
+
+  border-left: 2px solid #ffffff;
+
+}
+
+#cssmenu > ul > li > a:hover > span::after, #cssmenu > ul > li.active > a > span::after, #cssmenu > ul > li.open > a > span::after {
+
+  border-color: #eeeeee;
+
+}
+
+.holder::before {
+
+  top: 18px;
+
+  border-top: 2px solid;
+
+  border-left: 2px solid;
+
+  border-top-color: inherit;
+
+  border-left-color: inherit;
+
+}
+
+#cssmenu ul ul li a {
+
+  cursor: pointer;
+
+  border-bottom: 1px solid #32373e;
+
+  border-left: 1px solid #32373e;
+
+  border-right: 1px solid #32373e;
+
+  padding: 10px 20px;
+
+  z-index: 1;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  color: #eeeeee;
+
+  background: #49505a;
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+}
+
+#cssmenu ul ul li:hover > a, #cssmenu ul ul li.open > a, #cssmenu ul ul li.active > a {
+
+  background: #424852;
+
+  color: #ffffff;
+
+}
+
+#cssmenu ul ul li:first-child > a {
+
+  box-shadow: none;
+
+}
+
+#cssmenu ul ul ul li:first-child > a {
+
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+
+}
+
+#cssmenu ul ul ul li a {
+
+  padding-left: 30px;
+
+}
+
+#cssmenu > ul > li > ul > li:last-child > a, #cssmenu > ul > li > ul > li.last > a {
+
+  border-bottom: 0;
+
+}
+
+#cssmenu > ul > li > ul > li.open:last-child > a, #cssmenu > ul > li > ul > li.last.open > a {
+
+  border-bottom: 1px solid #32373e;
+
+}
+
+#cssmenu > ul > li > ul > li.open:last-child > ul > li:last-child > a {
+
+  border-bottom: 0;
+
+}
+
+#cssmenu ul ul li.active > a::after, #cssmenu ul ul li.open > a::after, #cssmenu ul ul li > a:hover::after {
+
+  border-color: #ffffff;
+
+}
+
+header nav {
+
+	display: none;
+
+}
+
+.picSlider {
+
+	display: none;
+
+}
+
+
+
+/*CONTAINER*/
+#container {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+section #section_evasion {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/plage_pas.jpg) no-repeat center;
+
+	background-size: cover;
+
+	-webkit-background-size: cover;
+
+}
+
+section #section_textRight {
+
+	width: 80%;
+
+	margin: auto;
+
+	padding: 50px 0px;
+
+	background-color: rgba(255, 255, 255, .5);
+
+	border: 4px solid #fff;
+
+	font-size: 90%;
+
+	text-align: justify center center;
+
+}
+
+section #section_textRight h1, section #section_textLeft h1 {
+
+	margin-bottom: 25px;
+
+	font-family: Echinos;
+
+	font-size: 230%;
+
+	letter-spacing: 0.2em;
+
+	text-align: center;
+
+}
+
+section #section_textRight p, section #section_textLeft p {
+
+	width: 50%;
+
+	margin: 0px auto;
+
+	line-height: 1.4em;
+
+	letter-spacing: 0.1em;
+
+}
+
+section #section_reve {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/plage_verre.jpg) no-repeat center;
+
+	background-size: cover;
+
+	-webkit-background-size: cover;
+
+}
+
+section #section_textLeft {
+
+	width: 80%; 
+
+	margin: auto;
+
+	padding: 50px 0px;
+
+	background-color: rgba(255, 255, 255, .5);
+
+	border: 4px solid #fff;
+
+	font-size: 90%;
+
+	text-align: justify center center;
+
+}
+
+section #section_paradis {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	height: 100vh;
+
+	width: 100%;
+
+	background: url(img/kayak.jpg) no-repeat center ;
+
+	background-size: cover;
+
+	-webkit-background-size: cover;
+
+}
+
+
+
+/*CONTAINER_APROPOS*/
+#container_apropos {
+
+	height:100%;
+
+	width: 100%;
+
+	font-size: 80%;
+
+}
+
+#container_apropos h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_apropos #resume_apropos {
+
+	width: 100%;
+
+	margin: auto;
+
+	margin-bottom: 45px;
+
+}
+
+#container_apropos #resume_apropos p {
+
+	margin: 0px 40px;
+
+	letter-spacing: 0.1em;
+
+	line-height: 150%;
+
+	text-align: justify;
+
+}
+
+#container_apropos section {
+
+	width: 100%;
+
+	height: auto;
+
+	display: table;
+
+}
+
+#container_apropos #img_block_left {
+
+	width: 100%;
+
+}
+
+#container_apropos #txt_block_right {
+
+	width: 100%;
+
+	padding: 2% 0px 0px;
+
+}
+
+#container_apropos .vertical_middle {
+
+	width: 100%;
+
+	margin: auto;
+
+	margin-bottom: 30px;
+
+}
+
+#container_apropos .vertical_middle p {
+
+	margin: 0px 40px;
+
+	letter-spacing: 0.1em;
+
+	line-height: 150%;
+
+	text-align: justify left; 
+
+}
+
+#container_apropos section h2 {
+
+	margin: 20px 0px;
+
+	font: 180% Echinos, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+
+	text-align: center;	
+
+}
+
+#container_apropos #img_block_right {
+
+	width: 100%;
+
+}
+
+#container_apropos #txt_block_left {
+
+	width: 100%;
+
+	padding: 2% 0px 0px;
+
+}
+
+
+
+/*CONTAINER DESTINATION*/
+#container_destination {
+
+	height: 100%;
+
+	width: 100%;
+
+	font-size: 80%;
+
+}
+
+#container_destination h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_destination article {
+
+	width: 100%;
+
+	margin: 0px auto 40px;
+
+}
+
+#container_destination h2 {
+
+	margin-bottom: 25px;
+
+	margin-left: 10px;
+
+	font-size: 180%;
+
+	font-family: Echinos;
+
+	letter-spacing: 0.1em;
+
+}
+
+#container_destination #img_destination {
+
+	width: 100%;
+
+}
+
+#container_destination #description_destination {
+
+	margin-top: 25px;
+}
+
+#container_destination #description_destination p:first-child {
+
+	margin: 0px 30px;
+
+	color: #353C42;
+
+	letter-spacing: 0.1em;
+
+	line-height: 1.5em;
+
+	text-align: justify;
+}
+
+.source {
+
+	margin: 10px 30px 0px;
+
+	font-size: 80%;
+
+	font-style: italic;
+}
+
+
+
+/*CONTAINER_OFFRES*/
+#container_offres {
+
+	height:100%;
+
+	width: 100%;
+
+}
+
+#container_offres h1 {
+
+	margin: 45px 0px;
+
+	font-size: 200%;
+
+	text-align: center;
+
+}
+
+#container_offres article {
+
+	width: 85%; /*1020/1200*/
+
+	margin: auto;
+
+	margin-bottom: 30px;
+
+	padding: 10px 10px;
+
+	border: 1px solid #D8D1D1;
+}
+
+#container_offres #img_offre{
+
+	height: 100%;
+
+	width: 100%; 
+}
+
+#container_offres #description_offre{
+
+	width: 100%; /*620/1200*/
+
+}
+
+#container_offres #description_offre h2{
+	
+	margin: 20px 0px;
+
+	font-size: 120%;
+
+}
+
+#container_offres #description_offre h2 + p{
+
+	margin-bottom: 35px;
+
+	color: #353C42;
+
+	line-height: 1.3em;
+
+	text-align: justify;
+}
+
+#container_offres #description_offre p + p{
+
+	margin-bottom: 15px;
+
+	color: #FF9A22;
+
+	font-size: 120%;
+		
+	font-weight: bold;
+
+	text-align: center;
+}
+
+#container_offres #description_offre button {
+
+	display: block;
+
+	width: 50%;
+
+	margin: auto;
+
+	padding: 1% 0px;
+
+	color: #ffffff;
+
+	background-color: #FF9A22;
+
+	border: none;
+
+	font-weight: bold;
+}
+
+#container_offres #description_offre button:hover {
+
+	background-color: #DB7905;
+}
+
+
+
+/*CONTACT*/
+#noscoordonnees, #message {
+
+	width: 80%;
+
+	height: 525px;
+
+	margin: 0px auto 50px;
+
+	padding-bottom: 20px;
+
+	border: 1px solid black;
+
+	text-align: center;
+
+}
+
+#noscoordonnees h2, #message h2 {
+
+	margin: 30px 0px;
+
+	font: 180% Echinos, Arial, sans-serif;
+
+	letter-spacing: 0.1em;	
+
+}
+
+.strong {
+
+	font-size: 160%;
+
+	font-weight: bold;
+
+}
+
+#noscoordonnees p {
+
+	margin: 10px 0px 40px;
+
+	font-size: 130%;
+
+}
+
+#contact_message label {
+
+	width: 30%;
+
+	margin-right: 2%;
+
+	display: inline-block;
+
+	text-align: left;
+
+}
+
+.input_message {
+
+	vertical-align: top;
+
+}
+
+#contact_message input, #contact_message textarea {
+
+	width: 52.17391304347826%;	/*240/460*/
+
+}
+
+#contact_message p {
+
+	margin: 20px 0px;
+
+}
+
+input[type="submit"] {
+
+	padding: 15px;
+
+	background-color: #1f76b8;
+
+	border: none;
+
+	color: #ffffff;
+
+	font: bold 140% Myriad Pro, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+}
+
+input[type="submit"]:hover {
+
+	background-color: #9bc7e9;
+
+}
+
+
+
+/*FOOTER*/
+footer {
+
+/*	height: 360px;
+*/
+	width: 100%;
+
+	position: relative;
+
+}
+
+footer h1 {
+
+	margin-bottom: 50px;
+
+	padding-top: 80px;
+
+	color: white;
+
+	font-size: 180%;
+
+	letter-spacing: 0.2em;
+
+	text-align: center;
+
+}
+
+#reseaux_flex {
+
+	width: 100%;
+
+	height: 360px;
+
+	background: url(img/plage_caillou.jpg) no-repeat center;
+
+	background-size: cover;
+}
+
+#reseaux {
+
+	display: flex;
+
+	display: -webkit-flex;
+	
+	width: 100%; /* 365/1200 */
+
+	margin: auto;
+
+}
+
+#reseaux a {
+
+	margin: auto;
+}
+
+#reseaux img {
+
+	margin: auto;
+
+	opacity: 1;
+
+}
+
+#reseaux img:hover {
+
+	opacity: 0.5;
+
+}
+
+footer section {
+
+	width: 100%;
+
+	background-color: #1f76b8;
+
+}
+
+footer nav {
+
+	width: 100%;  
+
+	margin: 0px auto 50px;
+
+	padding: 45px 0px 0px;
+
+	text-align: center;
+
+}
+
+footer nav ul{
+
+	width: 100%;
+
+	font-size: 85%;
+
+}
+
+footer nav li {
+
+	display: inline;
+
+	margin-right: 3%;
+
+	font-size: 80%;
+
+	list-style: none;
+
+	text-align: right;
+
+}
+
+footer nav ul li:last-child {
+
+	margin-right: 0px;
+
+}
+
+footer nav a {
+
+	color: #000;
+
+	font: 120% Myriad Pro, Arial, sans-serif;
+
+	text-decoration: none;
+
+}
+
+footer nav a:hover {
+
+	color: white;
+
+}
+
+/*Pour que la couleur bleu reste sur Destination*/
+
+footer nav li:hover > a {
+
+	color: #ffffff;
+
+}
+
+footer nav ul li {
+
+	display: inline-block; 
+
+	position: relative;
+
+}
+
+footer ul li:hover > ul {
+
+	display: block;
+
+}
+
+footer ul ul {
+
+	width: 100%;
+
+	display: none; 
+
+	position: absolute; 
+
+	background: #ffffff;
+
+	z-index: 9999;
+
+}
+
+footer ul ul li {
+
+	width: 100%;
+
+	margin-right: 0px;
+
+	padding: 10px 0px;
+
+	font-size: 150%;
+
+	text-align: center;
+}
+
+footer ul ul li:hover {
+
+	background-color: #0091ff;
+}
+
+footer ul ul a {
+
+	color: #000;
+	
+	font-size: 100%;
+
+}
+
+footer nav + p {
+
+	margin-bottom: 45px;
+
+	color: white;
+
+	font: 120% Myriad Pro, Arial, sans-serif;
+
+	letter-spacing: 0.1em;
+
+	text-align: center;
+
+}
+
+footer hr {
+
+	width: 75%;
+
+	margin-bottom: 35px;
+
+}
+
+footer hr + p {
+
+	text-align: center;
+	
+	padding-bottom: 10px;
+}
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------- FIN 480 --------------------------------------------------------------------------------------------------------------------------*/

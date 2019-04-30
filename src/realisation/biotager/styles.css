@@ -1,0 +1,1137 @@
+@charset "UTF-8";
+
+
+/*====================================================================================================================================RESET====================================================================================================================================
+*//* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*=========================================================================================================================================================================================================================================================================
+*/
+/*POLICES*/
+@font-face {
+    font-family: 'BionicHeart';
+    src: url('fonts/BionicHeart.eot');
+    src: url('fonts/BionicHeart.eot') format('embedded-opentype'),
+         url('fonts/BionicHeart.woff2') format('woff2'),
+         url('fonts/BionicHeart.woff') format('woff'),
+         url('fonts/BionicHeart.ttf') format('truetype'),
+         url('fonts/BionicHeart.svg#BionicHeart') format('svg');
+}
+
+
+/*GÉNÉRAUX*/
+body {
+	width: 100%;
+}
+
+.nofloat {
+	clear: both; 
+}
+
+.img-reponsive {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*MAIN*/
+#main {
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- DEBUT 1020 et plus --------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:1020px) {
+
+/*HEADER*/
+header {
+	width: 100%;
+}
+
+#logo {
+	width: 15%;
+	float: left;
+	margin: 0.65% 0px 0.65% 7.6%;
+}
+#logo_480 {
+	display: none;
+}
+
+#menu_h, #cssmenu {
+	display: none;
+}
+
+nav {
+	width: 72%;
+	float: right;
+	padding: 30px 0px 0px;
+}
+nav ul{
+	text-align: right;
+}
+nav li {
+	display: inline;
+	margin-right: 4.6%;
+	list-style: none;
+	text-align: right;
+}
+nav ul li:last-child {
+	margin-right: 5.15%;
+}
+nav a {
+	color: #000;
+	font: 160% Myriad Pro, Arial, sans-serif;
+	text-decoration: none;
+}
+nav a:hover {
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+
+
+/*CONTENAIRE*/
+#accueil {
+	width: 100%;
+	height: 90vh;
+	background: url(img/salade_acc.jpg) no-repeat center bottom fixed;
+	background-size: cover;
+}
+#notrepotager {
+	display: flex;
+	padding: 50px 0px;
+	height: 100%;
+	box-shadow: 0px 0px 5px 5px rgba(50, 50, 50, 0.3);
+}
+#txt_notrepotager {
+	width: 60%;
+	float: left;
+	margin-right: 5.3%;
+	padding-left: 5.3%;
+	text-align: justify;
+}
+#txt_notrepotager h1 {
+	margin-bottom: 20px;
+ 	font: 500% Bionicheart;
+}
+#txt_notrepotager p {
+ 	font: 150% Myriad Pro;
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+}
+#notrepotager img {
+	float: right;
+	margin: auto 5.3% auto auto;
+}
+
+#galerie {
+	width: 100%;
+	height: 100vh;
+}
+#galerie h1 {
+	margin: 40px 0px;
+	font: 500% Bionicheart;
+	text-align: center;
+}
+
+section {
+	width: 80%;	/*816/1020*/
+	float: left;
+}
+section #vegetal {
+	width: 50%;  /*408/816*/
+	/*height: 1000px;*/
+	height: 80vh;
+	display: flex;
+	float: left;
+	background: url(img/vegetal2.jpg) no-repeat center center;
+	background-size: cover;
+/*	opacity: 0.80;*/
+}
+section #potager {
+	width: 50%;	/*408/816*/
+	/*height: 1000px;*/
+	height: 80vh;
+	display: flex;
+	float: left;
+	background: url(img/potager.jpg) no-repeat center center;
+	background-size: cover;
+}
+#bg_opacity {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+#bg_opacity:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+aside {
+	width: 20%;	/*205/1020*/
+	/*height: 1000px;*/
+	float: left;
+}
+aside #salade {
+	width: 100%;	/*205/205*/
+	/*height: 1000px;*/
+	height: 40vh;
+	display: flex;
+	background: url(img/salade2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+aside #sante {
+	width: 100%;	/*205/205*/
+	/*height: 1000px;*/
+	height: 40vh;
+	display: flex;
+	background: url(img/repas.jpg) no-repeat center;
+	background-size: cover;
+}
+
+
+/*FORMULAIRE*/
+#reservation {
+	height: auto;
+} 
+#reservation h1 {
+	padding: 0px 0px 20px;
+ 	font: 500% Bionicheart;
+ 	text-align: center;
+}
+#contact {
+	width: 50%; 
+	margin-top: 20px; 
+	margin-right: auto; 
+	margin-left: auto;
+ 	margin-bottom: 20px; 
+ 	padding: 30px 40px; 
+ 	border: 1px solid #749d32; 
+ 	-webkit-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	-moz-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	-o-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ }
+#contact p {
+	margin-bottom: 20px; 
+	text-align: center;
+}
+.input_persos { 
+	width: 50%;
+	margin: auto;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #acd56b;
+	font-family: BionicHeart;
+	font-size: 150%;
+	letter-spacing: 0.2em;
+
+}
+
+.btn_submit {
+	width: auto; 
+	display: block;
+	margin: auto; 
+	padding: 10px;
+	background-color: #acd56b;
+	border-width: medium;
+	font-size: 100%; 
+	border-style: none;
+	font-weight: bold; color: #FFFFFF;
+	letter-spacing: 0.2em;
+}
+.btn_submit:hover {
+	width: 100%;
+	background-color: #acd56b;
+	color: ;
+}
+
+/*CONTACT_CONTACT*/
+#contact_contact {
+	height: 100%;
+	margin-top: 50px;
+	display: flex;
+	background: url(img/tomate.jpg) no-repeat center bottom fixed;
+	background-size: cover;
+}
+#contact_contact h1 {
+	padding: 0px 0px 20px;
+ 	font: 500% Bionicheart;
+ 	text-align: center;
+}
+#contact_contact2 {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: rgba(172, 213, 107, .3);
+}
+#contact2 {
+	width: 60%; 
+	margin: auto;
+	padding-bottom: 40px;
+ }
+#contact2 p {
+	margin-bottom: 20px; 
+	text-align: center;
+}
+.input_persos2 { 
+	width: 50%;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 5px;
+	border: 2px solid #749d32;
+	font-family: BionicHeart;
+	font-size: 150%;
+	letter-spacing: 0.2em;
+
+}
+#contact_contact textarea {
+	width: 50%;
+	height: 150px;
+}
+
+
+/*SCROLLTOP*/
+#scrolltop {
+	width: 48px;
+	height: 48px;
+	position: fixed;
+	background: url(img/up.png) no-repeat center center;
+	cursor: pointer;
+	bottom: 1%;
+	right: 1%;
+	opacity: 0.6;
+	z-index: 99;
+	/*display: none;*/
+}
+#scrolltop:hover {
+	opacity: 1;
+}
+
+
+/*FOOTER*/
+footer {
+	width: 100%;
+	height: 150px;
+	background: url(img/bg_footer.gif) repeat-x bottom;
+}
+
+footer #reseaux_soc {
+	width: 13.7254902%;	/*130/1020*/
+	float: left;
+/*	margin-left: 9.55%;
+	padding-top: 2.7%;*/
+	margin-left: 13.7254902%;
+	padding-top: 40px;
+}
+footer #reseaux_soc480 {
+	display: none;
+}
+
+footer #twitter {
+	width: 35.38461538%;	/*46/130*/
+	float: left;
+	padding-top: 10px;
+}
+
+footer #facebook {
+	width: 9.923%;	/*22/130*/
+	float: right;
+}
+
+footer #reseaux_soc a:hover {
+	opacity: 0.5;
+}
+
+footer #logo_footer {
+	width: 13.7254902%;
+	float: left;
+	margin-left: 13.7254902%;
+	padding-top: 30px;
+	text-align: center;
+}
+
+footer #adresse {
+	width: 19.7254902%;
+	float: left;
+	padding-top: 30px;
+	margin-left: 13.7254902%;
+	text-align: center;
+}
+footer #adresse p:first-child {
+	font-size: 170%;
+	font-family: BionicHeart;
+	margin-bottom: 5px;
+}
+footer #adresse p {
+	line-height: 1.3em;
+}
+footer #adresse p:last-child {
+	font-weight: bold;
+}
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------- FIN 1020 et plus --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- DEBUT 768 --------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:481px) and (max-width:1019px) {
+
+
+/*HEADER*/
+header {
+	width: 100%;
+	display: flex;
+	padding: 10px;
+}
+
+#logo {
+	width: 15%;
+	float: left;
+	margin: 0.65% 0px 0.65% 7.6%;
+}
+#logo_480 {
+	display: none;
+}
+
+#menu_h, #cssmenu {
+	display: block;
+}
+
+nav {
+	display: none;
+}
+
+#menu_h {
+	display: inline-block;
+	/*float: right;*/
+	margin-left: 54.8%;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+#cssmenu {
+  display: none;
+  margin: 0;
+  padding: 0;  
+  background: #333;
+  list-style: none;
+  width: 100%;
+}
+#cssmenu li {
+  font: 100% Myriad Pro, Verdana, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+#cssmenu a {
+  display: block;
+  margin: 0;
+  padding: 8px 12px;	
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+}
+#cssmenu a:hover {
+  padding-bottom: 8px;
+  background: #acd56b url("img/hover.gif")  10px center no-repeat;
+  color: #fff;
+}
+
+
+/*CONTENAIRE*/
+#accueil {
+	width: 100%;
+	height: 90vh;
+	background: url(img/salade_acc.jpg) no-repeat center bottom fixed;
+	background-size: cover;
+}
+#notrepotager {
+	display: flex;
+	padding: 50px 0px;
+	height: 100%;
+	box-shadow: 0px 0px 5px 5px rgba(50, 50, 50, 0.3);
+}
+#txt_notrepotager {
+	width: 60%;
+	float: left;
+	margin-right: 5.3%;
+	padding-left: 5.3%;
+	text-align: justify;
+}
+#txt_notrepotager h1 {
+	margin-bottom: 20px;
+ 	font: 500% Bionicheart;
+}
+#txt_notrepotager p {
+ 	font: 150% Myriad Pro;
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+}
+#notrepotager img {
+	float: right;
+	margin: auto 5.3% auto auto;
+}
+
+#galerie {
+	width: 100%;
+	height: 170vh;
+}
+#galerie h1 {
+	margin: 40px 0px;
+	font: 500% Bionicheart;
+	text-align: center;
+}
+
+section {
+	width: 100%;	/*480*/
+}
+section #vegetal {
+	width: 100%; /*480*/
+	/*height: 1000px;*/
+	height: 50vh;
+	display: flex;
+	background: url(img/vegetal2.jpg) no-repeat center center;
+	background-size: cover;
+/*	opacity: 0.80;*/
+}
+section #potager {
+	width: 100%;	/*408/816*/
+	/*height: 1000px;*/
+	height: 50vh;
+	display: flex;
+	background: url(img/potager.jpg) no-repeat center center;
+	background-size: cover;
+}
+#bg_opacity {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+#bg_opacity:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+#h1_center {
+	width: 100%;
+	height: auto;
+	display: flex;
+	margin: auto;
+	color: white;
+	text-align: center;
+	z-index: 40;
+}
+#h1_center p {
+	margin: auto;
+	font-family: BionicHeart;
+	font-size: 500%;
+	text-shadow: 3px 3px 8px #000000;
+	-moz-text-shadow: 3px 3px 8px #000000;
+	-webkit-text-shadow: 3px 3px 8px #000000;
+	z-index: 50;
+}
+#h1_center a {
+	color: #fff;
+	text-decoration: none;
+}
+
+aside {
+	width: 100%;
+	/*height: 1000px;*/
+}
+aside #salade {
+	width: 100%;	/*240/480*/
+	/*height: 1000px;*/
+	height: 25vh;
+	display: flex;
+	background: url(img/salade2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+aside #sante {
+	width: 100%;	/*205/205*/
+	/*height: 1000px;*/
+	height: 25vh;
+	display: flex;
+	background: url(img/repas.jpg) no-repeat center;
+	background-size: cover;
+}
+aside .font480 {
+	font-size: 80%;
+}
+
+
+/*FORMULAIRE*/
+#reservation {
+	height: auto;
+} 
+#reservation h1 {
+	padding: 0px 0px 20px;
+ 	font: 500% Bionicheart;
+ 	text-align: center;
+}
+#contact {
+	width: 80%; 
+	margin-top: 20px; 
+	margin-right: auto; 
+	margin-left: auto;
+ 	margin-bottom: 20px; 
+ 	padding: 30px 40px; 
+ 	border: 1px solid #749d32; 
+ 	-webkit-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	-moz-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	-o-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ }
+#contact p {
+	margin-bottom: 20px; 
+	text-align: center;
+}
+.input_persos { 
+	width: 80%;
+	margin: auto;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #acd56b;
+	font-family: BionicHeart;
+	font-size: 150%;
+	letter-spacing: 0.2em;
+
+}
+
+.btn_submit {
+	width: auto; 
+	display: block;
+	margin: auto; 
+	padding: 10px;
+	background-color: #acd56b;
+	border-width: medium;
+	font-size: 100%; 
+	border-style: none;
+	font-weight: bold; color: #FFFFFF;
+	letter-spacing: 0.2em;
+}
+.btn_submit:hover {
+	width: 100%;
+	background-color: #acd56b;
+	color: ;
+}
+
+/*CONTACT_CONTACT*/
+#contact_contact {
+	height: 100%;
+	margin-top: 50px;
+	display: flex;
+	background: url(img/tomate.jpg) no-repeat center bottom fixed;
+	background-size: cover;
+}
+#contact_contact h1 {
+	padding: 0px 0px 20px;
+ 	font: 500% Bionicheart;
+ 	text-align: center;
+}
+#contact_contact2 {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: rgba(172, 213, 107, .3);
+}
+#contact2 {
+	width: 100%; 
+	margin: auto;
+	padding-bottom: 40px;
+ }
+#contact2 p {
+	margin-bottom: 20px; 
+	text-align: center;
+}
+.input_persos2 { 
+	width: 50%;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 5px;
+	border: 2px solid #749d32;
+	font-family: BionicHeart;
+	font-size: 150%;
+	letter-spacing: 0.2em;
+
+}
+#contact_contact textarea {
+	width: 50%;
+	height: 150px;
+}
+
+
+/*SCROLLTOP*/
+#scrolltop {
+	width: 48px;
+	height: 48px;
+	position: fixed;
+	background: url(img/up.png) no-repeat center center;
+	cursor: pointer;
+	bottom: 1%;
+	right: 3%;
+	opacity: 0.6;
+	z-index: 99;
+	/*display: none;*/
+}
+#scrolltop:hover {
+	opacity: 1;
+}
+
+
+/*FOOTER*/
+footer {
+	width: 100%;
+	height: 190px;
+	background: url(img/bg_footer.gif) repeat-x bottom;
+}
+
+footer #reseaux_soc {
+	display: none;
+}
+
+footer #reseaux_soc480 {
+	width: 100%;	/*134/480*/
+	display: flex;
+	margin: 25px auto ;
+}
+
+footer #twitter {
+	width: 52px;	/*46/130*/
+	float: left;
+	margin: auto;
+	padding-left: 30%;
+}
+
+footer #facebook {
+	width: 52px;	/*22/130*/
+	float: left;
+	margin-right: auto;
+	padding-right: 30%;
+}
+
+footer #reseaux_soc480 a:hover {
+	opacity: 0.5;
+}
+
+footer #logo_footer {
+	display: none;
+}
+
+footer #adresse {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+footer #adresse p:first-child {
+	font-size: 170%;
+	font-family: BionicHeart;
+	margin-bottom: 5px;
+}
+footer #adresse p {
+	line-height: 1.3em;
+}
+footer #adresse p:last-child {
+	font-weight: bold;
+}
+
+
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------- FIN 768 --------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- DEBUT 480 --------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width:480px) {
+
+
+/*HEADER*/
+header {
+	width: 100%;
+	display: flex;
+	padding: 10px;
+}
+
+#logo {
+	display: none;
+}
+#logo_480 {
+	display: block;
+	float: left;
+}
+
+nav {
+	display: none;
+}
+
+#menu_h {
+	display: inline-block;
+	/*float: right;*/
+	margin-left: 45.8%;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+#cssmenu {
+  display: none;
+  margin: 0;
+  padding: 0;  
+  background: #333;
+  list-style: none;
+  width: 100%;
+}
+#cssmenu li {
+  font: 100% Myriad Pro, Verdana, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+#cssmenu a {
+  display: block;
+  margin: 0;
+  padding: 8px 12px;	
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  text-decoration: none;
+  font-weight: normal;
+}
+#cssmenu a:hover {
+  padding-bottom: 8px;
+  background: #acd56b url("img/hover.gif")  10px center no-repeat;
+  color: #fff;
+}
+
+
+/*CONTENAIRE*/
+#accueil {
+	width: 100%;
+	height: 90vh;
+	background: url(img/salade_acc.jpg) no-repeat center center;
+	background-size: cover;
+}
+#notrepotager {
+	padding: 50px 0px;
+	height: 100%;
+	box-shadow: 0px 0px 5px 5px rgba(50, 50, 50, 0.3);
+}
+#txt_notrepotager {
+	width: 100%;
+	margin: 0px auto 50px;
+	text-align: justify;
+}
+#txt_notrepotager h1 {
+	margin: 0px 0px 40px;
+ 	font: 500% Bionicheart;
+ 	text-align: center;
+}
+#txt_notrepotager p {
+ 	font: 150% Myriad Pro;
+	letter-spacing: 0.1em;
+	line-height: 1.2em;
+	padding: 0px 6%;
+}
+#notrepotager img {
+	margin: auto 5.3% auto auto;
+}
+
+#galerie {
+	width: 100%;
+	height: 145vh;
+}
+#galerie h1 {
+	margin: 40px 0px;
+	font: 500% Bionicheart;
+	text-align: center;
+}
+
+section {
+	width: 100%;	/*480*/
+}
+section #vegetal {
+	width: 100%; /*480*/
+	/*height: 1000px;*/
+	height: 50vh;
+	display: flex;
+	background: url(img/vegetal2.jpg) no-repeat center center;
+	background-size: cover;
+/*	opacity: 0.80;*/
+}
+section #potager {
+	width: 100%;	/*408/816*/
+	/*height: 1000px;*/
+	height: 50vh;
+	display: flex;
+	background: url(img/potager.jpg) no-repeat center center;
+	background-size: cover;
+}
+#bg_opacity {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+#bg_opacity:hover {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+aside {
+	width: 100%;
+	/*height: 1000px;*/
+}
+aside #salade {
+	width: 50%;	/*240/480*/
+	/*height: 1000px;*/
+	height: 25vh;
+	display: flex;
+	float: left;
+	background: url(img/salade2.jpg) no-repeat center;
+	background-size: cover;
+}
+
+aside #sante {
+	width: 50%;	/*205/205*/
+	/*height: 1000px;*/
+	height: 25vh;
+	display: flex;
+	float: left;
+	background: url(img/repas.jpg) no-repeat center;
+	background-size: cover;
+}
+aside .font480 {
+	font-size: 50%;
+}
+
+
+/*FORMULAIRE*/
+#reservation {
+	height: auto;
+} 
+#reservation h1 {
+	padding: 0px 0px 20px;
+ 	font: 500% Bionicheart;
+ 	text-align: center;
+}
+#contact {
+	width: 70%; 
+	margin-top: 20px; 
+	margin-right: auto; 
+	margin-left: auto;
+ 	margin-bottom: 20px; 
+ 	padding: 30px 40px; 
+ 	border: 1px solid #749d32; 
+ 	-webkit-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	-moz-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	-o-box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ 	box-shadow: inset 0px 0px 0px 10px #acd56b , inset 0px 0px 0px 11px #749d32 ;
+ }
+#contact p {
+	margin-bottom: 20px; 
+	text-align: center;
+}
+.input_persos { 
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #acd56b;
+	font-family: BionicHeart;
+	font-size: 150%;
+	letter-spacing: 0.2em;
+
+}
+
+.btn_submit {
+	width: auto; 
+	display: block;
+	margin: auto; 
+	padding: 10px;
+	background-color: #acd56b;
+	border-width: medium;
+	font-size: 100%; 
+	border-style: none;
+	font-weight: bold; color: #FFFFFF;
+	letter-spacing: 0.2em;
+}
+.btn_submit:hover {
+	width: 100%;
+	background-color: #acd56b;
+	color: ;
+}
+
+
+/*CONTACT_CONTACT*/
+#contact_contact {
+	height: 100%;
+	margin-top: 50px;
+	display: flex;
+	background: url(img/tomate.jpg) no-repeat center bottom fixed;
+	background-size: cover;
+}
+#contact_contact h1 {
+	padding: 0px 0px 20px;
+ 	font: 500% Bionicheart;
+ 	text-align: center;
+}
+#contact_contact2 {
+	width: 100%;
+	height: auto;
+	margin: auto;
+	background: rgba(172, 213, 107, .3);
+}
+#contact2 {
+	width: 100%; 
+	margin: auto;
+	padding-bottom: 40px;
+ }
+#contact2 p {
+	margin-bottom: 20px; 
+	text-align: center;
+}
+.input_persos2 { 
+	width: 80%;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 5px;
+	border: 2px solid #749d32;
+	font-family: BionicHeart;
+	font-size: 150%;
+	letter-spacing: 0.2em;
+
+}
+#contact_contact textarea {
+	width: 50%;
+	height: 150px;
+}
+
+
+/*SCROLLTOP*/
+#scrolltop {
+	width: 48px;
+	height: 48px;
+	position: fixed;
+	background: url(img/up.png) no-repeat center center;
+	cursor: pointer;
+	bottom: 1%;
+	right: 6%;
+	opacity: 0.6;
+	z-index: 99;
+	/*display: none;*/
+}
+#scrolltop:hover {
+	opacity: 1;
+}
+
+
+/*FOOTER*/
+footer {
+	width: 100%;
+	height: 190px;
+	background: url(img/bg_footer.gif) repeat-x bottom;
+}
+
+footer #reseaux_soc {
+	display: none;
+}
+
+footer #reseaux_soc480 {
+	width: 100%;	/*134/480*/
+	display: flex;
+	margin: 25px auto ;
+}
+
+footer #twitter {
+	width: 52px;	/*46/130*/
+	float: left;
+	margin: auto;
+}
+
+footer #facebook {
+	width: 52px;	/*22/130*/
+	float: left;
+	margin-right: auto;
+}
+
+footer #reseaux_soc480 a:hover {
+	opacity: 0.5;
+}
+
+footer #logo_footer {
+	display: none;
+}
+
+footer #adresse {
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+footer #adresse p:first-child {
+	font-size: 170%;
+	font-family: BionicHeart;
+	margin-bottom: 5px;
+}
+footer #adresse p {
+	line-height: 1.3em;
+}
+footer #adresse p:last-child {
+	font-weight: bold;
+}
+
+
+}
+/*-------------------------------------------------------------------------------------------------------------------------- FIN 480 --------------------------------------------------------------------------------------------------------------------------*/

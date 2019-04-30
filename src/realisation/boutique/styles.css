@@ -1,0 +1,627 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*======================================================================================================================================================================================================
+																				--ÉLÉMENTS DEMANDÉS-- 
+AUDIO => boutique.htm																			
+aside div#audio {
+	background-color:#FDE346;
+}
+aside div#audio audio {
+	width:220px;
+	padding-top:10px;
+
+BORDER-RADIUS et BOX-SHADOW => contact.htm
+div#container2 form#contact input, textarea {
+	padding:5px;
+	border:none;
+	border-radius:10px;
+	-o-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	box-shadow:5px 5px 7px 2px #565353;
+	-o-box-shadow:5px 5px 7px 2px #565353;
+	-webkit-box-shadow:5px 5px 7px 2px #565353;
+	-moz-box-shadow:5px 5px 7px 2px #565353;
+}
+
+TEXT-SHADOW => Dans tous les premiers h1
+div#container section > h1, div#container2 section > h1 {
+	margin-bottom:15px;
+	font:bold 1.80em Kgpiece, Verdana, sans-serif;
+	letter-spacing:0.2em;
+	text-align:center;
+	text-shadow:2px 2px 0px #FFF;
+	-o-text-shadow:2px 2px 0px #FFF;
+	-webkit-text-shadow:2px 2px 0px #FFF;
+	-moz-text-shadow:2px 2px 0px #FFF;
+}
+
+BACKGROUND COVER
+body {
+	background:url(img/bg_table.jpg) center 100% repeat-y;
+	font:1em Verdana, Arial, sans-serif;
+	background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+}
+
+EMAIL => Contact.htm
+Dans le formulaire de la page Contact
+
+PLACEHOLDER => Contact.htm
+Placer dans le formulaire de la page Contact
+
+FIGURE, FIGCAPTION => index.htm
+figure {
+	background-color:#DDDDDD;
+}
+table tfoot td, figcaption {
+	font-size:0.80em;
+	padding:10px 0px;
+	background-color:#DDDDDD;
+	font-style:italic;
+	text-align:center;
+}
+
+TRANSITION et OPACITY => Sur les images de réseaux sociaux
+div#reseaux_img a img {
+	opacity:1;
+	transition:opacity 0.8s ease 0s;
+	-o-transition:opacity 0.8s ease 0s;
+	-webkit-transition:opacity 0.8s ease 0s;
+	-moz-transition:opacity 0.8s ease 0s;
+}
+div#reseaux_img a img:hover {
+	opacity:0.5;
+	-o-opacity:0.5;
+	-webkit-opacity:0.5;
+	-moz-opacity:0.5;
+}
+
+COLUMNS => contact.htm
+.txtcolonne {
+	columns:2;
+	-o-columns:2;
+	-moz-columns:2;
+	-webkit-columns:2;
+	column-rule:1px dotted #777;
+	-o-column-rule:1px dotted #777;
+	-webkit-column-rule:1px dotted #777;
+	-moz-column-rule:1px dotted #777; 
+}
+
+FAVICON => header de toutes les pages
+<link href="favicon/favicon_encrier.ico" rel="icon">
+<link href="favicon/favicon_encrier.ico" type="image/x.icon" rel="shortcut icon">
+<link href="favicon/favicon_encrier.png" type="image/png" rel="icon">
+
+SELECTEUR ADJACENT
+div#container2 section h1 ~ p {
+	background-color:#DDDDDD;
+	line-height:1.5em;
+	text-align:center;
+}
+div#container section article p + p {
+	width:100px;
+	margin:45px auto;
+	font-weight:bold;
+	text-align:center;
+}
+														
+======================================================================================================================================================================================================*/
+
+/*POLICES*/
+@font-face {
+    font-family: 'Kgpiece';
+    src: url('fonts/kgpiecebypiece-webfont.eot');
+    src: url('fonts/kgpiecebypiece-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kgpiecebypiece-webfont.woff2') format('woff2'),
+         url('fonts/kgpiecebypiece-webfont.woff') format('woff'),
+         url('fonts/kgpiecebypiece-webfont.ttf') format('truetype'),
+         url('fonts/kgpiecebypiece-webfont.svg#kg_piece_by_pieceregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Hide 000webhost*/
+a[title~=hosting] {
+    display: none !important;
+}
+
+/*GENERAL*/
+body {
+	background:url(img/bg_table.jpg) center 100% repeat-y;
+	font:1em Verdana, Arial, sans-serif;
+	background-size:cover;
+	-o-background-size:cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+}
+	
+* {
+	margin:0px;
+	padding:0px;
+}
+
+.nofloat {
+	clear:both;
+}
+
+article, aside, figure, figcaption, footer, header, nav, section {
+	display:block;
+}
+
+
+/*MAIN*/
+div#main {
+	width:960px;
+	margin:auto;
+}
+
+
+/*HEADER*/
+header {
+	width:960px;
+	margin-bottom:50px;
+}
+
+div#logo {
+	width:440px;
+	margin:10px 30px 0px 260px;
+}
+
+div#slogan {
+	width:160px;
+	float:right;
+	margin:33px 70px 0px 0px;	
+}
+div#slogan h1 {
+	color:#f8f706;
+	font:2em Kgpiece, Verdana, sans-serif;
+	line-height:1.40em;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+header nav {
+	width:960px;
+	padding:20px 0px;
+	background:url(img/bg_menu.png) center no-repeat;
+}
+header nav ul li {
+	display:inline;
+	margin:0px 0px 0px 120px;
+}
+header nav ul li a {
+	color:#FFFFFF;
+	font-size:1.2em;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+header nav ul li a:hover {
+ color:#A09A9A;
+}
+
+
+/*CONTAINER*/
+div#container, div#container2 {
+	width:960px;
+	margin:0px 0px 50px;
+}
+
+div#container2 {
+	padding-top:30px;
+	background-color: rgba(255,255,255,0.60);
+}
+
+
+/*ASIDE*/
+div#container aside {
+	width:220px;
+	float:left;
+	margin:70px 0px 0px 10px;
+	text-align:center;
+}
+div#container aside h1 {
+	padding-top:5px;
+	font:1em Kgpiece, Verdana, sans-serif;
+}
+div#container aside img {
+	margin:0px 60px;
+}
+div#container aside h2 {
+	margin-bottom:10px;
+	font:bold 0.8em Verdana, Arial, sans-serif;
+}
+div#container aside p {
+	margin-bottom:10px;
+	font-size:0.8em;
+}
+
+div#promotion, div#vedette {
+	height:245px;
+	width:220px;
+	margin-bottom:30px;
+	background:url(img/bg_postit.png) no-repeat;
+}
+div#promotion h2 + p {
+	text-decoration: line-through;	
+}
+div#promotion div#prix_encercle {
+	width: 120px;
+	margin: 0px auto;
+	background: url(img/encercle_rouge.png) center no-repeat;
+}
+div#promotion div#prix_encercle p {
+	padding:10px 35px;
+	font:bold 0.90em Verdana, Arial, sans-serif;
+}
+
+div#vedette a {
+	color:#000000;
+	font-size:0.7em;
+	font-weight:bold;
+	text-decoration:none;
+}
+div#vedette a:hover {
+	color:#FF0101;
+}
+
+div#audio {
+	background-color:#FDE346;
+}
+div#audio audio {
+	width:220px;
+	padding-top:10px;
+}
+
+
+/*SECTION*/	
+div#container section {
+	width:700px;
+	float:left;
+	margin:0px 10px 0px 20px;
+}
+div#container2 section h1 ~ p {
+	padding:10px;
+	letter-spacing:0.1em;
+	line-height:1.5em;
+	text-align:center;
+}
+div#container section > h1, div#container2 section > h1 {
+	margin-bottom:15px;
+	font:bold 1.80em Kgpiece, Verdana, sans-serif;
+	letter-spacing:0.2em;
+	text-align:center;
+	text-shadow:2px 2px 0px #FFF;
+	-o-text-shadow:2px 2px 0px #FFF;
+	-webkit-text-shadow:2px 2px 0px #FFF;
+	-moz-text-shadow:2px 2px 0px #FFF;
+}
+
+
+/*SECTION FORMULAIRE BOUTIQUE*/	
+form#boutique {
+	width:720px;
+}
+form#boutique label {
+	width: 60px;
+	display:block;
+	float:left;
+	margin:0px 15px 8px 5px;	
+}
+form#boutique input#qte {
+	height:15px;
+	width:20px;
+}
+form#boutique input#commander {
+	width:140px;
+	padding:14px 0px;
+	float:right;
+	margin:15px 20px 0px 0px;
+	border:none;
+	background-color:#000000;
+	color:#FFFFFF;
+	font:1em Kgpiece, Verdana, sans-serif;
+}
+form#boutique input#commander:hover {
+	background:#FFFFFF;
+	color:#000000;
+}
+
+
+/* SECTION ARTICLE BOUTIQUE */
+div#container section article {
+	width:220px;
+	float:left;
+	margin:0px 20px 15px 0px;
+	background-image:url(img/bg_article.png);
+	font-size:0.8em;
+}
+div#container section article img {
+	margin-top:14px;
+}
+div#container section article h2 {
+	width:210px;
+	margin:0px 5px;
+	font-size:1em;
+	font-weight:bold;
+	
+}
+div#container section article h2 + p {
+	height: 55px;
+	width: 210px;
+	margin: 20px 5px;
+	text-align: justify;
+}
+div#container section article p + p {
+	width:100px;
+	margin:45px auto;
+	font-weight:bold;
+	text-align:center;
+}
+
+
+/* SECTION À PROPOS */
+div#apropos_rectangle_box {
+	width:960px;
+	margin-bottom:30px;
+	letter-spacing:0.06em;
+}
+div#apropos_rectangle_box h2 {
+	margin:0px 0px 30px;
+	padding-top:20px;
+	font-size:0.90em;
+	text-transform:uppercase;	
+}
+div#apropos_rectangle_box:nth-child(odd) h2 {
+	margin-left:55px;
+}
+div#apropos_rectangle_box:last-child {
+	margin-bottom:none;
+	padding-bottom:30px;
+}
+div#apropos_rectangle_box p {
+	margin:0px 55px;
+	font-size:0.90em;
+	line-height:1.70em;
+	text-align:justify;
+}
+
+
+/*TABLEAU et FIGURE*/
+table {
+	width:960px;
+	margin-top:30px;
+	border-collapse: collapse;
+	font-size:0.90em;
+}
+table caption {
+	padding-bottom:20px;
+	font-weight:bold;
+	text-transform:uppercase;	
+}
+thead, tfoot, tbody {
+	width:960px;
+}
+table thead th {
+	padding:20px 0px;
+	text-align:center;
+}
+table thead th ~ th, table tbody td ~ td {
+	border-left:3px solid #989393;
+}
+table tfoot td, figcaption {
+	font-size:0.80em;
+	padding:10px 0px;
+	background-color:#DDDDDD;
+	font-style:italic;
+	text-align:center;
+}
+table tbody td {
+	width:200px;
+	padding:5px 20px 10px;
+	line-height:2em;
+	text-align:center;
+	vertical-align:top;
+}
+
+figure {
+	background-color:#DDDDDD;
+}
+
+
+/*FORMULAIRE CONTACT*/
+div#container2 form#contact p, .btn_submit {
+	margin:0px 0px 20px 10px;
+	font:bold 1.2em KGpiece, Verdana, sans-serif;
+}
+div#container2 form#contact label {
+	width:220px;
+	display:inline-block;
+	vertical-align:top;
+}
+div#container2 form#contact input {
+	width: 200px;
+	margin-bottom: 10px;
+}
+div#container2 form#contact textarea {
+	height:100px;
+	width:200px;
+}
+div#container2 form#contact input, textarea {
+	padding:5px;
+	border:none;
+	border-radius:10px;
+	-o-border-radius:10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	box-shadow:5px 5px 7px 2px #565353;
+	-o-box-shadow:5px 5px 7px 2px #565353;
+	-webkit-box-shadow:5px 5px 7px 2px #565353;
+	-moz-box-shadow:5px 5px 7px 2px #565353;
+}
+
+div#container2 div#coordonnees {
+	padding:90px 0px;
+	display:block;
+	margin:auto;
+	text-align:center;
+}
+div#container2 div#coordonnees p, div#coordonnees h3 {
+	margin-bottom:10px;
+	font-size:15px;
+	letter-spacing:0.1em;
+}
+div#coordonnees h3 {
+	font-variant: small-caps;
+}
+div#container2 div#coordonnees p a {
+	color:#000000;
+	text-decoration:none;
+}
+div#container2 div#coordonnees p a:hover {
+	background-color:#000000;
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+div#container2 div#coordonnees div#reseaux_img a:first-child img {
+	margin-right:20px;
+}
+
+
+/*FOOTER*/
+footer {
+	height:500px;
+	width:960px;
+	background: url(img/bg_footer.png);
+}
+
+footer section {
+	width:620px;
+	margin-left:170px;
+	padding-top:210px;
+}
+
+footer nav {
+	width:95%;
+	margin-bottom:65px;
+}
+footer nav ul li {
+	display:inline;
+	
+}
+footer nav ul li ~ li {
+	margin-left:75px;
+}
+footer nav ul li a {
+	color:#FFFFFF;
+	font-size:1em;
+	font-variant:small-caps;
+	text-decoration:none;
+}
+footer nav ul li a:hover {
+	padding:5px;
+	background-color:#FFFFFF;
+	color:#000000;
+}
+
+footer aside {
+	width:220px;
+	float:left;
+	margin-left:100px;
+}
+footer aside h1 {
+	margin-bottom:16px;
+	color:#FFFFFF;
+	font:1.50em Kgpiece, Verdana, sans-serif;
+}
+footer aside ul li {
+	margin-bottom:5px;
+}
+footer aside ul li a {
+	color:#FFFFFF;
+	font-size: 0.80em;
+	text-decoration: none;
+}
+footer aside ul li a:hover {
+	color:#f8f706;
+}
+
+footer div#reseaux {
+	width:220px;
+	float:left;
+	margin-left:80px;
+	
+}
+footer div#reseaux h1 {
+	margin-bottom:16px;
+	color:#FFFFFF;
+	font:1.50em Kgpiece, Verdana, sans-serif;
+	text-align:center;
+}
+footer div#reseaux_img {
+	width:149px;
+	margin:0px auto;
+}
+div#reseaux_img a img {
+	opacity:1;
+	transition:opacity 0.8s ease 0s;
+	-o-transition:opacity 0.8s ease 0s;
+	-webkit-transition:opacity 0.8s ease 0s;
+	-moz-transition:opacity 0.8s ease 0s;
+}
+div#reseaux_img a img:hover {
+	opacity:0.5;
+	-o-opacity:0.5;
+	-webkit-opacity:0.5;
+	-moz-opacity:0.5;
+}
+footer div#reseaux_img a:first-child img {
+	margin-right:5px;
+}
+
+footer + p {
+	margin:12px 0px;
+	color:#FFFFFF;
+	font:1.1em bold Verdana, Arial, sans-serif;
+	text-align:center;
+}
+
+
+/*STYLES PERSO*/
+.floatright {
+	margin-left:20px;
+	float:right;
+}
+
+.floatleft {
+	margin-right:20px;
+	float:left;	
+}
+
+.txtcolonne {
+	columns:2;
+	-o-columns:2;
+	-moz-columns:2;
+	-webkit-columns:2;
+	column-rule:1px dotted #777;
+	-o-column-rule:1px dotted #777;
+	-webkit-column-rule:1px dotted #777;
+	-moz-column-rule:1px dotted #777; 
+}
+
+.btn_submit {
+	width: 20px auto;
+	margin:50px auto 0px;
+	display: block;
+	background-color: #000000;
+	color: #FFFFFF;
+	letter-spacing: 0.1em;
+}
+.btn_submit:hover {
+	background-color: #FFFFFF;
+	color: #000000;
+}

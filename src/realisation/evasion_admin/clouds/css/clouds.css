@@ -1,0 +1,26 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+/*body {
+  margin: 0;
+  background: #aedfe5 url("../img/login_bg.jpg") no-repeat center;
+  background-size: cover;
+}
+*/
+.stage {
+    top: -8%;
+    left: 0;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    overflow: hidden;
+    z-index: 100;
+}
+.far-clouds {
+    background: transparent url("../img/far-clouds.png") 305px 105px repeat-x;
+}
+.near-clouds {
+    background: transparent url("../img/near-clouds.png") 305px 165px repeat-x;
+}

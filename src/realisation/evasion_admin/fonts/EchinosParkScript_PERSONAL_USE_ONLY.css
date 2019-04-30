@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'EchinosParkScript_PERSONAL_USE_ONLY';
+    src: url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.eot');
+    src: url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.eot') format('embedded-opentype'),
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.woff2') format('woff2'),
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.woff') format('woff'),
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.ttf') format('truetype'),
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.svg#EchinosParkScript_PERSONAL_USE_ONLY') format('svg');
+}

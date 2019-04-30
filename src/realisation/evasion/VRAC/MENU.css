@@ -1,0 +1,60 @@
+#menu_h, #cssmenu {
+	display: none;
+}
+
+header nav {
+	width: 59.166666666666%;  /* 210/1200 */
+	float: left;
+	margin-left: 140px;
+	padding: 51px 0px 0px;
+}
+header nav ul{
+	/*width: 1200px;*/
+	/*text-align: right;*/
+}
+header nav li {
+	display: inline;
+	margin-right: 14%;
+	position: relativ;
+	list-style: none;
+	text-align: right;
+}
+header nav ul li:last-child {
+	margin-right: 0px;
+}
+header nav a {
+	color: #000;
+	font: 160% Myriad Pro, Arial, sans-serif;
+	text-decoration: none;
+}
+header nav a:hover {
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+}
+header nav ul li:hover > ul {
+	display:block;
+}
+
+/*SOUS-MENU*/
+header nav ul ul {
+	display:none; 
+	position:absolute; 
+	z-index:9999; 
+	background:#999;
+}
+header nav ul ul a {
+	width:200px; 
+	color:#fff;
+}
+header nav ul ul a:hover {
+	background-color:#ccc;
+}
+
+
+
+/*CONTAINER*/
+#container {
+	height:100%;
+	width: 100%;
+}

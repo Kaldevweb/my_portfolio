@@ -1,0 +1,394 @@
+@charset "UTF-8";
+
+
+/*====================================================================================================================================RESET====================================================================================================================================
+*//* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*=========================================================================================================================================================================================================================================================================
+*/
+/*POLICES*/
+@font-face {
+    font-family: 'Echinos';
+    src: url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.eot');
+    src: url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.eot') format('embedded-opentype'),
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.woff2') format('woff2'),
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.woff') format('woff'),
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.ttf') format('truetype'),
+         url('fonts/EchinosParkScript_PERSONAL_USE_ONLY.svg#EchinosParkScript_PERSONAL_USE_ONLY') format('svg');
+}
+
+
+/*GÉNÉRAUX*/
+body {
+	width: 100%;
+	font-family: Myriad Pro;
+}
+
+.nofloat {
+	clear: both; 
+}
+
+.img-reponsive {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/*MAIN*/
+#main {
+
+}
+
+
+
+
+/*-------------------------------------------------------------------------------------------------------------------------- DEBUT 1020 et plus --------------------------------------------------------------------------------------------------------------------------*/
+
+/*HEADER*/
+header {
+	width: 100%;
+}
+
+#logo {
+	width: 11.5%;  /* 210/1200 */
+	float: left;
+	margin: 0.65% 0px 0.65% 3.5%;
+}
+#logo_480 {
+	display: none;
+}
+
+#menu_h, #cssmenu {
+	display: none;
+}
+
+header nav {
+	width: 70%;  /* 210/1200 */
+	float: left;
+	margin-left: 7.65%;
+	padding: 51px 0px 0px;
+}
+header nav ul {
+	list-style-type: none;
+}
+header nav ul li {
+	margin-right: 4%;
+	float: left;
+}
+header nav ul li:last-child {
+	margin-right: 0px;
+}
+header nav a {
+	width: 135px; /*220px*/
+	padding: 14px 0px; 
+	display: inline-block; 
+	color: #000;
+	font: small-caps 160% Myriad Pro, Arial, sans-serif;	
+	text-align: center;  
+	text-decoration: none; 
+}
+header nav a:hover {
+	color: #1f76b8;
+}
+/*Pour que la couleur bleu reste sur Destination*/
+header nav li:hover > a {
+	color: #1f76b8;
+}
+header nav ul li {
+	display: inline-block; 
+	position: relative;
+}
+header ul li:hover > ul {
+	display: block;
+}
+header ul ul {
+	width: 100%;
+	display: none; 
+	position: absolute; 
+	background: #ffffff;
+	z-index: 9999;
+}
+header ul ul a {
+	color: #000;
+}
+header ul ul a:hover {
+	background-color: #1f76b8;
+	color: #ffffff;
+}
+
+
+
+/*CONTAINER*/
+#container {
+	height:100%;
+	width: 100%;
+}
+
+section #section_evasion {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	background: url(img/plage_pas.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+section #section_textRight {
+	width: 50%;  /* 600/1200 */
+	height: ;
+	margin: auto 0px auto 38%;
+	padding: 50px 0px;
+	background-color: rgba(255, 255, 255, .5);
+	border: 4px solid #fff;
+	font-size: 200%;
+	text-align: justify center center;
+}
+section #section_textRight h1, section #section_textLeft h1 {
+	margin-bottom: 25px;
+	font-family: Echinos;
+	font-size: 230%;
+	letter-spacing: 0.2em;
+	text-align: center;
+}
+section #section_textRight p, section #section_textLeft p {
+	width: 50%;
+	margin: 0px auto;
+	line-height: 1.4em;
+	letter-spacing: 0.1em;
+}
+
+section #section_reve {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	background: url(img/plage_verre.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+section #section_textLeft {
+	width: 50%;  /* 600/1200 */
+	height: ;
+	margin: auto;
+	margin-right: 38%;
+	padding: 50px 0px;
+	background-color: rgba(255, 255, 255, .5);
+	border: 4px solid #fff;
+	font-size: 200%;
+	text-align: justify center center;
+}
+
+section #section_paradis {
+	display: flex;
+	height: 100vh;
+	width: 100%;
+	background: url(img/kayak.jpg) no-repeat center fixed;
+	background-size: cover;
+}
+
+
+
+/*FOOTER*/
+footer {
+	height: 360px;
+	width: 100%;
+	position: relative;
+	background: url(img/plage_caillou.jpg) no-repeat center;
+	background-size: cover;
+}
+
+footer h1 {
+	margin-bottom: 50px;
+	padding-top: 80px;
+	color: white;
+	font-size: 180%;
+	letter-spacing: 0.2em;
+	text-align: center;
+}
+
+#reseaux_flex {
+	width: 100%;
+	height: 360px;
+}
+#reseaux {
+	display: flex;
+	width: 30.416666666666%; /* 365/1200 */
+	margin: auto;
+}
+#reseaux img {
+	margin: 0px 37.2%;
+	opacity: 1;
+}
+#reseaux img:hover {
+	opacity: 0.5;
+}
+
+footer section {
+	width: 100%;
+	height: 300px;
+	background-color: #1f76b8;
+}
+
+footer nav {
+	width: 58.75%;  
+	margin: 0px auto 50px;
+	padding: 45px 0px 0px;
+	text-align: center;
+}
+footer nav ul{
+	width: 100%;
+	/*text-align: right;*/
+}
+footer nav li {
+	display: inline;
+	margin-right: 9%;
+	list-style: none;
+	text-align: right;
+}
+footer nav ul li:last-child {
+	margin-right: 0px;
+}
+footer nav a {
+	color: #000;
+	font: 120% Myriad Pro, Arial, sans-serif;
+	text-decoration: none;
+}
+footer nav a:hover {
+	color: white;
+}
+
+footer nav + p {
+	margin-bottom: 45px;
+	color: white;
+	font: 120% Myriad Pro, Arial, sans-serif;
+	letter-spacing: 0.1em;
+	text-align: center;
+}
+
+footer hr {
+	width: 75%;
+	margin-bottom: 35px;
+}
+
+footer hr + p {
+	text-align: center;
+}
+
+
+
+/*LOGIN*/
+#container_login {
+	display: flex;
+	height: 100vh;
+	background: url(login_bg.jpg) no-repeat center;
+	background-size: cover;
+}
+/* div surrounding login form */
+#container_login #login {
+  background-color: #eee;
+  opacity: .9;
+/*  height: 280px;*/
+  width: 400px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+/* form header */
+#container_login h1 {
+  font-size: 32px;
+  padding: 10px;
+  margin: 0;
+  color: #fff;
+  background-color: #55acee;
+  margin-bottom: 15px;
+}
+
+/* text fields */
+#container_login input:not([type="button"]) {
+  width: 300px;
+  height: 50px;
+  border-radius: 6px;
+  border: 1px solid #acacac;
+  margin-bottom: 15px;
+  text-align: center;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  transition: all .5s;
+  font-family: 'Open Sans', 'sans-serif';
+}
+
+#container_login input:not([type="button"]):focus {
+  color: #55acee;
+  width: 370px;
+  border: 1px solid #55acee;
+  outline: none;
+}
+
+/* submit button */
+#container_login input[type="button"] {
+  font-size: 32px;
+  color: #fff;
+  background-color: #55acee;
+  box-shadow: 0 5px 0 0 #3C93D5;
+  border: none;
+  padding: 10px;
+  width: 400px;
+  display: inline-block;
+  position: relative;
+  outline: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#container_login input[type="button"]:active {
+  box-shadow: 0 1px 0 0 #3C93D5;
+  -webkit-transform: translate(0,5px);
+  -moz-transform: translate(0,5px);
+  transform: translate(0,5px);
+}
+
+

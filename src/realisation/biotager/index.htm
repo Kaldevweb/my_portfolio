@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Kevin AHLOYE">
+<meta name="keywords" content="Restaurant, salade, légumes, bio, potager">
+<meta name="description" content="Site web du Biotager un restaurant végétarien bio">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="favicon/favicon.ico">
+<link rel="icon" type="image/png" href=" favicon/favicon.png">
+<link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico">
+<link href="styles.css" rel="stylesheet">
+<title>Le Biotager</title>
+
+<style>
+	a[title~=hosting] {
+	    display: none !important;
+	}
+</style>
+
+<script>
+document.createElement ('article')
+document.createElement ('header')
+document.createElement ('figure')
+document.createElement ('figcaption')
+document.createElement ('footer')
+document.createElement ('nav')
+document.createElement ('section')
+document.createElement ('aside')
+</script>
+<script src="script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+	$(function(){
+
+	  $('#menu_h').click(function(){
+	     
+	     $('#cssmenu').slideToggle("fast");
+
+	  }); //FIN $('#cssmenu').click
+
+	  $('#scrolltop').click(function(){
+	  	$('html,body').animate({scrollTop:0},'slow');	
+
+	  });	//FIN $('#scrolltop').click
+
+	  //DISPARAIT AU TOP
+	  $(window).scroll(function(){
+	  	if($(window).scrollTop()==0)
+	  	{
+	  		$('#scrolltop').fadeOut();
+	  	}
+	  	else
+	  	{
+	  		$('#scrolltop').fadeIn();
+	  	}
+
+	  });	//FIN $(window).scroll
+
+
+
+	});   //FIN JQUERY
+</script>
+</head>
+
+<body>
+
+<div id="main"> <!-- MAIN -->
+
+<header>
+	<div id="logo">
+		<a href="index.htm">
+			<img src="img/logo.png" alt="Logo du Biotager">
+		</a>	
+	</div>
+
+	<div id="logo_480">
+		<a href="index.htm">
+			<img src="img/logo_480.gif" alt="Logo du Biotager pour Smartphone">
+		</a>	
+	</div>
+
+	<div id="menu_h">
+		<a href="#"><img src="img/bg_menu.gif" alt=""></a>
+	</div>
+
+	<nav>
+		<ul>
+			<li><a href="#main">Accueil</a></li>
+			<li><a href="#notrepotager">Notre biotager</a></li>
+			<li><a href="#galerie">Galerie</a></li>
+			<li><a href="#reservation">Réservation</a></li>
+			<li><a href="#contact_contact2">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="nofloat"><!-- block nav #logo--></div>	
+</header>
+
+<div id='cssmenu'>
+	<ul>
+	   <li class='active'><a href='#main'><span>Accueil</span></a></li>
+	   <li><a href='#notrepotager'><span>Notre biotager</span></a></li>
+	   <li><a href='#galerie'><span>Galerie</span></a></li>
+	   <li class='last'><a href='#reservation'><span>Réservation</span></a></li>
+	   <li class='last'><a href='#contact_contact2'><span>Contact</span></a></li>
+	</ul>
+</div>
+
+<div id="container"><!-- CONTAINER-->
+	<div id="accueil">
+	</div>
+
+	<div id="notrepotager">
+		<div id="txt_notrepotager">
+			<h1>Notre biotager</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque molestiae quam porro, nemo maxime consequatur quo provident officia totam, alias eos inventore fugiat at voluptates dolorem obcaecati placeat, esse, expedita. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, esse sint! Quaerat est facilis, sint debitis ullam, id! Quaerat dolores exercitationem ipsam ipsum, rem, architecto inventore autem illo reprehenderit delectus.</p>
+			<br>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et libero ipsa, quis veritatis molestiae distinctio cupiditate dignissimos modi enim accusamus, voluptas quam nesciunt fugiat, velit adipisci, a impedit temporibus itaque.</p>
+		</div>	
+		<img src="img/bio1.png" alt="Image du potager Biopotager" class="img-reponsive">
+	</div>
+	<div class="nofloat"><!-- block img--></div>	
+
+	<div id="galerie">
+		<h1>Galerie</h1>
+		<section>
+			<div id="vegetal">
+				<div id="bg_opacity">
+					<div id="h1_center">
+					</div>
+				</div>
+			</div>
+
+			<div id="potager">
+				<div id="bg_opacity">
+					<div id="h1_center">
+					</div>
+				</div>				
+			</div>
+			<div class="nofloat"><!-- block #vegetal #potager--></div>				
+		</section>
+		
+		<aside>
+			<div id="salade">
+				<div id="bg_opacity">
+					<div id="h1_center" class="font480">
+					</div>
+				</div>					
+			</div>
+
+			<div id="sante">
+				<div id="bg_opacity">
+					<div id="h1_center" class="font480">
+					</div>
+				</div>
+			</div>
+		</aside>
+		<div class="nofloat"><!-- block section aside--></div>
+	</div>
+
+	<!-- 	FORMULAIRE RESERVATION -->
+	<div id="reservation">
+		<h1>Reservation</h1>
+		<form action="#" methode="post" id="contact">
+		<p><input name="txt_nom" type="text" class="input_persos" placeholder="Nom"></p>
+		<p><input name="telephone" type="text" class="input_persos" placeholder="Telephone"></p>
+		<p><input name="nb_personne" class="input_persos" placeholder="Nb de personnes"></p>
+		<p><input name="heure" type="text" class="input_persos" placeholder="Heure"></p>
+		<p><input name="jour" type="text" class="input_persos" placeholder="Jour"></p>
+		<input name="submit" type="submit" class="btn_submit" value="Réservez">
+		</form>
+	</div>
+
+	<div id="contact_contact">
+		<div id="contact_contact2">
+			<h1>Contact</h1>
+			<form action="#" methode="post" id="contact2">
+			<p><input name="txt_nom" type="text" class="input_persos2" placeholder="Nom"></p>
+			<p><input name="courriel" type="email" class="input_persos2" placeholder="Courriel"></p>
+			<p><textarea placeholder="Votre message ici..."></textarea></p>
+			<input name="submit" type="submit" class="btn_submit" value="Envoyer">
+			</form>
+		</div>
+	</div>
+
+
+
+</div><!-- FIN CONTAINER -->
+<div id="scrolltop"></div>
+<footer>
+	<div id="reseaux_soc">
+		<div id="twitter"><a href="#"><img src="img/twitter1020.png" alt="Twitter Le Biotager"></a></div>
+		<div id="facebook"><a href="#"><img src="img/facebook1020.png" alt="Facebook Le Biotager"></a></div>
+		<div class="nofloat"><!-- block #twitter #facebook--></div>	
+	</div>
+
+	<div id="reseaux_soc480">
+		<div id="twitter"><a href="#"><img src="img/twitter480.gif" alt="Twitter Le Biotager"></a></div>
+		<div id="facebook"><a href="#"><img src="img/facebook480.gif" alt="Facebook Le Biotager"></a></div>
+		<div class="nofloat"><!-- block #twitter #facebook--></div>	
+	</div>
+
+	<div id="logo_footer">
+		<a href="index.htm">
+			<img src="img/logo_footer.png" alt="Logo du Biotager Footer">
+		</a>	
+	</div>
+
+	<div id="adresse">
+		<p>Restaurant Le Biotager</p>
+		<p>3819 Rue des Pinguoins</p>
+		<p>Chicoutimi, QC G7X 607</p>
+		<p> 418 376 5478</p>
+	</div>
+</footer>
+</div> <!-- FIN MAIN -->
+</body>
+</html>

@@ -1,0 +1,19 @@
+[03-May-2016 14:22:56 America/Montreal] PHP Fatal error:  Call to a member function query() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/position.php on line 9
+[03-May-2016 14:22:58 America/Montreal] PHP Fatal error:  Call to a member function query() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/position.php on line 9
+[03-May-2016 14:24:08 America/Montreal] PHP Fatal error:  Call to a member function query() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/position.php on line 9
+[03-May-2016 22:09:30 America/Montreal] PHP Fatal error:  Call to a member function query() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/pop_modif_titre_mp.php on line 6
+[03-May-2016 22:10:22 America/Montreal] PHP Fatal error:  Call to a member function query() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/pop_modif_titre_mp.php on line 6
+[04-May-2016 13:42:13 America/Montreal] PHP Fatal error:  Call to a member function real_escape_string() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/modif_titre_mp.php on line 5
+[10-May-2016 20:19:57 America/Montreal] PHP Fatal error:  Call to a member function query() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_ssm.php on line 7
+[10-May-2016 20:21:44 America/Montreal] PHP Fatal error:  Call to a member function free() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_ssm.php on line 17
+[10-May-2016 20:22:12 America/Montreal] PHP Fatal error:  Call to undefined method mysqli::free() in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_ssm.php on line 17
+[10-May-2016 20:22:37 America/Montreal] PHP Fatal error:  Call to undefined method mysqli::free() in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_ssm.php on line 17
+[10-May-2016 20:23:41 America/Montreal] PHP Fatal error:  Call to a member function close() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_ssm.php on line 18
+[11-May-2016 19:19:48 America/Montreal] PHP Fatal error:  Call to undefined function autorisation() in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_article_destination.php on line 16
+[11-May-2016 19:20:53 America/Montreal] PHP Fatal error:  Call to a member function free() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_article_destination.php on line 23
+[11-May-2016 19:21:56 America/Montreal] PHP Fatal error:  Call to a member function free() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_article_destination.php on line 23
+[11-May-2016 19:22:47 America/Montreal] PHP Fatal error:  Call to a member function free() on a non-object in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/sup_article_destination.php on line 23
+[14-May-2016 17:31:18 America/Montreal] PHP Parse error:  syntax error, unexpected end of file in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/pop_modif_article_offre.php on line 15
+[14-May-2016 17:31:20 America/Montreal] PHP Parse error:  syntax error, unexpected end of file in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/pop_modif_article_offre.php on line 15
+[14-May-2016 18:45:17 America/Montreal] PHP Parse error:  syntax error, unexpected end of file in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/modif_titre_mp.php on line 53
+[14-May-2016 18:45:24 America/Montreal] PHP Parse error:  syntax error, unexpected end of file in /home/dm1631/public_html/14ah-loyelaw-vai/evasion/admin/ajax/modif_titre_mp.php on line 53
