@@ -1,6 +1,6 @@
 <h2>Description</h2>
 
-It's the repo of my portfolio. You can check it [HERE](http://wwww.kevinahloye.com)
+It's the repo of my portfolio. You can check it [HERE](http://www.kevinahloye.com)
 
 I made it by my own.
 
